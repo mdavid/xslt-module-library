@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet 
+<xsl:transform 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:atom0.3="http://purl.org/atom/ns#" 
     xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -40,4 +40,4 @@
         </feed>
     </xsl:template>
     
-</xsl:stylesheet>
+</xsl:transform>
