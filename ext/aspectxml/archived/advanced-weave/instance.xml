@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+  <Greeting>
+    <Message format="text" type="urgent">AspectXML is getting there!</Message>
+    <Message format="text" type="critical">Getting Closer!</Message>
+  </Greeting>
+</root>
