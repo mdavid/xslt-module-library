@@ -35,7 +35,7 @@
         <xsl:result-document format="xml" href="file:///{@saveResult}">
             <feed  xml:lang="en">
                 <title>XSLT:Blog[@author = 'M. David Peterson']/Main</title>
-                <link rel="alternate" type="alternate"/>
+                <link rel="self"  type="application/atom+xml" href="http://xslt.googlecode.com/svn/trunk/module/feedAggregation/output.xml"/>
                 <updated>2006-03-31T13:40:38Z</updated>
                 <subtitle>An XSLT community news, commentary, code samples, and evangelism weblog developed, hosted, maintained, and edited by M. David Peterson and sponsored in full by FunctionalX Consulting.</subtitle>
                 <id>tag:www.xsltblog.com,2006://1</id>
