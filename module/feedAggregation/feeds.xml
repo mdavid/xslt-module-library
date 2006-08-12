@@ -2,6 +2,6 @@
 <subscriptions saveResult="output.xml">
 	<feed uri="http://www.xsltblog.com/atom-0.3.xml"/>
 	<feed uri="http://www.xsltblog.com/feed.atom"/>
-	<feed uri="http://www.xsltblog.com/index.rdf"/>
 	<feed uri="http://www.xsltblog.com/index.xml"/>
+	<feed uri="http://www.xsltblog.com/index.rdf"/>
 </subscriptions>
