@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<links>
+  <link href="sukbasics.xml">Perusteet</link>
+  <link href="sukbasics.xml" target="main">Perusteet</link>
+</links>

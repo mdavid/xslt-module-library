@@ -1,0 +1,98 @@
+<?xml version='1.0'?>
+<form>
+  <page name="MEDICAL">
+    <heading2> 2004 Medical Options for Wxxxx,Donald x</heading2>
+    <pcp>
+      <row number="0">
+        <benefit_plan>PBASIC</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Basic</plan_desc>
+        <covrg_desc>Employee Only</covrg_desc>
+        <price>109.1</price>
+      </row>
+      <row number="1">
+        <benefit_plan>PBASIC</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Basic</plan_desc>
+        <covrg_desc>Employee+Spouse/DomesticPartnr</covrg_desc>
+        <price>283.61</price>
+      </row>
+      <row number="2">
+        <benefit_plan>PBASIC</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Basic</plan_desc>
+        <covrg_desc>Employee+Child</covrg_desc>
+        <price>283.61</price>
+      </row>
+      <row number="3">
+        <benefit_plan>PBASIC</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Basic</plan_desc>
+        <covrg_desc>Family</covrg_desc>
+        <price>391.51</price>
+      </row>
+      <row number="4">
+        <benefit_plan>PDIRCT</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Direct</plan_desc>
+        <covrg_desc>Employee Only</covrg_desc>
+        <price>127.55</price>
+      </row>
+      <row number="5">
+        <benefit_plan>PDIRCT</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Direct</plan_desc>
+        <covrg_desc>Employee+Spouse/DomesticPartnr</covrg_desc>
+        <price>314.01</price>
+      </row>
+      <row number="6">
+        <benefit_plan>PDIRCT</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Direct</plan_desc>
+        <covrg_desc>Employee + Child(ren)</covrg_desc>
+        <price>292.92</price>
+      </row>
+      <row number="7">
+        <benefit_plan>PDIRCT</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Direct</plan_desc>
+        <covrg_desc>Family</covrg_desc>
+        <price>442.7</price>
+      </row>
+      <row number="8">
+        <benefit_plan>PCHOIC</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Choice</plan_desc>
+        <covrg_desc>Employee Only</covrg_desc>
+        <price>181.08</price>
+      </row>
+      <row number="9">
+        <benefit_plan>PCHOIC</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Choice</plan_desc>
+        <covrg_desc>Employee+Spouse/DomesticPartnr</covrg_desc>
+        <price>426.7</price>
+      </row>
+      <row number="10">
+        <benefit_plan>PCHOIC</benefit_plan>
+        <plan_desc>PacifiCare / UA Net Choice</plan_desc>
+        <covrg_desc>Employee + Child(ren)</covrg_desc>
+        <price>394.07</price>
+      </row>
+    </pcp>
+  </page>
+  <page name="DENTAL">
+    <heading2>2004 Dental Options for Wxxxx,Donald x</heading2>
+    <pcp>
+      <row number="0">
+        <benefit_plan>DEPO</benefit_plan>
+        <plan_desc>Delta Exclsv Pnl Optn</plan_desc>
+        <covrg_desc>Employee Only</covrg_desc>
+        <price>0</price>
+      </row>
+      <row number="1">
+        <benefit_plan>DEPO</benefit_plan>
+        <plan_desc>Delta Exclsv Pnl Optn</plan_desc>
+        <covrg_desc>Employee+Spouse/DomesticPartnr</covrg_desc>
+        <price>13.5</price>
+      </row>
+      <row number="2">
+        <benefit_plan>DEPO</benefit_plan>
+        <plan_desc>Delta Exclsv Pnl Optn</plan_desc>
+        <covrg_desc>Employee + Child(ren)</covrg_desc>
+        <price>16.36</price>
+      </row>
+    </pcp>
+  </page>
+</form>
+

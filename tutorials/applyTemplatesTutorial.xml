@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<html name="foo">
+  <head>
+    <title>this is the title</title>
+  </head>
+  <body onload="javascript: foo();">
+    <h1>
+      <b>this is a bold heading 1</b>
+    </h1>
+    <p>this is the text of the first paragraph.<b>this is some bolded text in the first paragraph.  <i>this is some bold and italized text.</i>  </b> <i>this is italized text.  </i>And this is just regular text again</p>
+  </body>
+</html>

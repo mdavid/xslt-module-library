@@ -1,0 +1,23 @@
+<foo>
+	<child_of_foo>
+		<foos_grandson/>
+		<foos_granddaughter lastname="bar"/>
+    <foos_love_child/>
+	</child_of_foo>
+  <child_of_foo>
+		<foos_grandson/>
+		<foos_granddaughter/>
+    <foos_love_child/>
+	</child_of_foo>
+  <child_of_foo>
+		<foos_grandson/>
+		<foos_granddaughter/>
+    <foos_love_child/>
+	</child_of_foo>
+  <bastard_child_of_foo>
+		<foos_grandson/>
+		<foos_granddaughter/>
+    <foos_love_child/>
+	</bastard_child_of_foo>
+</foo>
+

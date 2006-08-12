@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dataItems>
+      <!-- this is a comment about the first item -->
+  <item name="itemName1">I1</item>
+
+      <!-- this is a comment about the second item -->
+      <!-- this is a follow on comment for 2nd item -->
+  <item name="itemName2">I2</item>
+
+      <!-- this is a comment about the third item -->
+      <!-- 3rd item also has an additional comment line -->
+  <item name="itemName3">I3</item>
+
+      <!-- this is a comment about the fourth item -->
+  <item name="itemName4">I4</item>
+</dataItems>

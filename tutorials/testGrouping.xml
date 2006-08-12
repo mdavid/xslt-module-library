@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBInspector ReportName="Query Report" Date="15.01.2004">
+	<SQLStatement>select * from testdb2.person p, testdb2.adresse a where 
+p.persnr = a.persnr</SQLStatement>
+	<ColumnNames>
+		<Column>persnr</Column>
+		<Column>name</Column>
+		<Column>vorname</Column>
+		<Column>nr</Column>
+	</ColumnNames>
+	<ColumnEntries>
+		<Row>
+			<Entrie type="Integer">1</Entrie>
+			<Entrie type="Variable Character">Wehnert</Entrie>
+			<Entrie type="Variable Character">Lothar</Entrie>
+			<Entrie type="Variable Character">Yoyo</Entrie>
+			<Entrie type="Variable Character">Lothar</Entrie>
+		</Row>
+		<Row>
+			<Entrie type="Integer">2</Entrie>
+			<Entrie type="Variable Character">Egg</Entrie>
+			<Entrie type="Variable Character">Loth</Entrie>
+			<Entrie type="Variable Character">Was</Entrie>
+			<Entrie type="Variable Character">Ertz</Entrie>
+		</Row>
+	</ColumnEntries>
+</DBInspector>
+

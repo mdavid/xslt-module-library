@@ -1,0 +1,198 @@
+<script language="javascript">
+
+var theSite = 'cheaptickets';
+
+function neatRedirect(f, s) {
+switch (theSite){
+case "rossbab":
+theSite="rossandbabcock"; 
+
+break;
+default : // alert(theSite);
+}
+if (f.elements['package-departure-city'].value == 'Leaving from') {
+  f.elements['package-departure-city'].value = '';
+}
+if (f.elements['package-destination-city'].value == 'Going to') {
+  f.elements['package-destination-city'].value = '';
+}
+
+var url = "";
+var widgetType = f.elements["widget_type"].value;
+var prodPath = f.elements["product_path"].value;
+var searchStartPage = f.elements["search_start_page"].value;
+var theDate1 = (parseInt(getSelectValue(f, "packageDeparture-month")) + 1) + "/";
+theDate1 +=  getSelectValue(f, "packageDeparture-day") + "/" + f.elements["packageDeparture-year"].value; 
+var theDate2 = (parseInt(getSelectValue(f, "packageReturning-month")) + 1) + "/";
+theDate2 +=  getSelectValue(f, "packageReturning-day") + "/" + f.elements["packageReturning-year"].value; 
+var pkgType = getRadioValue(document.forms['productSelectionForm'], "searchType");
+//alert (pkgType);
+var packageType = "";
+switch (pkgType){
+case "flight-hotel-car":
+packageType="AHC"; 
+//alert(packageType);
+break;
+case "flight-hotel":
+packageType="AH"; 
+//alert(packageType);
+break;
+case "flight-car":
+packageType="AC"; 
+//alert(packageType);
+break;
+case "hotel-car":
+packageType="HC"; 
+//alert(packageType);
+break;
+}
+var adults = getSelectValue(f, "adults"); 
+var childrenNum = getSelectValue(f, "childrenNum");
+var age1 = "-1" ;
+var age2 =  "-1" ;
+var age3 =  "-1" ;
+var age4 =  "-1" ;
+if (childrenNum > 0){ age1 = 5; }
+if (childrenNum > 1){ age2 = 5; }
+if (childrenNum > 2){ age3 = 5; }
+if (childrenNum > 3){ age4 = 5; }
+
+url = "http://"+theSite+".neatgroup.com/"+theSite+"/CPGateway?DD="+theSite+"&fromLocation="+f.elements['package-departure-city'].value;
+url += "&toLocation="+f.elements['package-destination-city'].value+"&fromDate="+theDate1+"&toDate="+theDate2;
+url += "&combinationType="+packageType+"&adultsNum="+adults;
+url += "&minorAge1="+age1+"&minorAge2="+age2+"&minorAge3="+age3+"&minorAge4="+age4+"&landing=T&doSearch="+s;
+url += "&widget_type="+widgetType+"&product_path="+prodPath+"&search_start_page="+searchStartPage;
+parent.location = url;
+}
+
+	</script><html><head><META http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><META content="text/html; charset=iso-8859-1" http-equiv="Content-Type"><meta content="discount airfare cheap airfares online travel discount airline reservations airline ticket airline tickets cheap flights cheap airfare air fares  american airlines frequent flyer miles  accommodation Las Vegas hotel accommodations motels all-inclusive packages all inclusive vacations vacation rentals avis auto rentals cruise ships cruises destinations budget car rental agency business travel agency rental cars atlanta chicago continental airlines united airlines united flight days inn  delta airlines  denver europe dallas fort worth  hawaii online hotel reservations las vegas hotels howard johnson inns lodging london los angeles  map maps mexico  resorts ramada orlando phoenix  san francisco super 8 motels caribbean islands deals travel lodge travelodge trip network  tni cendant" name="keywords"><meta content="Book airline tickets, hotels, rental cars, cruises, packages, last-minute trips and unique vacation rentals online or by phone - 1.888.922.8849" name="description"><!--Online discount airfares available - travel to Las Vegas, Chicago, Atlanta, Los Angeles, Denver, and the world on United Airlines, Continental Airlines, Delta Airlines, and more.--><!--AW-Package_Search--><title>Cheap Tickets - Flights, hotels, cars, cruises, Last Minute Trips, vacation packages</title><style type="text/css">input {display:inline} label {display:block} .home {font:11px/11px verdana, tahoma, "sans serif"} form{margin:0;padding:0} </style><link rel="shortcut icon" href="http://www.cheaptickets.com/favicon.ico"><link rel="stylesheet" type="text/css" href="/cheaptickets/stylesheet.css"><link rel="stylesheet" type="text/css" href="/cheaptickets/home_stylesheet.css"><script src="../components/index_01_javascript_library.xsl" language="JavaScript" type="text/javascript"></script><script src="../components/master_library/form_widget_library/form_widget_components/searchJavascript.xsl" language="JavaScript" type="text/javascript"></script><script src="../components/date_selector_js_library.xsl" language="JavaScript" type="text/javascript"></script></head><body onunload="exitSurvey();" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0"><div style="position:absolute; left:0px; top:0px; width:760px; height:auto;"><script language="javascript">
+    var clicked = false;
+    var currentWidget = ""; //initialize the variable
+    function getSelectValue(f, el) {return f.elements[el][f.elements[el].selectedIndex].value;}
+    function getRadioValue(f, el) {
+	var x = f.elements[el].length; var v = 0;
+	for (var i=0; i < x; i++) {
+		if (f.elements[el][i].checked) v = i;
+	}
+	return f.elements[el][v].value;
+}
+currentWidget = "airLayer";
+
+function showLayer(p) {
+   if (p == "pkg" && currentWidget == "pkgLayer") {
+    return;
+} else {
+ document.getElementById(currentWidget).style.display = "none";
+ document.getElementById(p+"Layer").style.display = "inline";
+ currentWidget = p+"Layer";
+ }
+}
+function lockOut(x) {
+if (x == "flexible") {
+document.getElementById("departureSection").className = "isHidden";
+document.getElementById("returningSection").className = "isHidden";
+}
+if (x == "inflexible") {
+document.getElementById("departureSection").className = "isShown";
+if (document.forms["airSearchForm"].elements["trip-type"][1].checked == false) {
+document.getElementById("returningSection").className = "isShown";
+}
+}
+if (x == "oneway") {
+document.getElementById("returningSection").className = "isHidden";
+}
+if (x == "roundtrip") {
+ if (document.forms["airSearchForm"].elements["flexible-dates"][1]) {
+ if (document.forms["airSearchForm"].elements["flexible-dates"][0].checked == false) {
+ document.getElementById("returningSection").className = "isShown";
+}
+} else  if (document.forms["airSearchForm"].elements["flexible-dates"].value == 'false') {
+document.getElementById("returningSection").className = "isShown";
+}
+}
+} 
+</script><div style="position:absolute; left:0px; top:0px; width:760px; height:135px;" name="header"><div style="position:absolute; left:10px; top:15px; height:60px; width:275px;" name="CTIX_Logo_Image"><a href="http://www.cheaptickets.com"><img border="0" height="50px" width="189px" src="/cheaptickets/i/ctix_identity.gif"></a></div><div style="position:absolute; left:290px; top:5px; width:468px; height:60px;" name="Section_A"><div style="float:left; width:380; height:auto; margin:0px 0px 0px 0px"><div style="float:left; margin:"><!--AD Tag!--><script src="http://ad.doubleclick.net/adj/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;dcopt=ist;ach=;st=;abr=!webtv;sz=468x60;tile=1;ord=2262770722895455862" language="JavaScript1.1"></script><script language="JavaScript1.1"> if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0) { document.write('<a href="http://ad.doubleclick.net/jump/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;dcopt=ist;ach=;st=;sz=468x60;tile=1;ord=2262770722895455862">');document.write('<img width="" height="" border="0" src="http://ad.doubleclick.net/ad/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;dcopt=ist;ach=;st=;sz=468x60;tile=1;ord=2262770722895455862"></a>') } </script></div></div></div><div style="position:absolute; left:0px; top:90px; height:25px; background:transparent; background-image:url(/cheaptickets/i/nav/nav_bg_25px.gif); background-repeat:repeat-x top; width:760px" name="Tab_Navigation"><div style="width:10px; float:left;"></div><div style="float:left;" name="home"><a onclick="popUpOff();" target="_parent" href="http://tnidd014/trs/cheaptickets/home/index_01.xsl"><img alt="Home" height="25" width="63" border="0" src="/cheaptickets/i/nav/home_off.gif"></a></div><div style="float:left;" name="travel-packages"><a onclick="popUpOff();" target="_parent" href="http://tnidd014/trs/cheaptickets/packages/packages_search.xsl"><img alt="Vacation Packages" height="25" width="63" border="0" src="/cheaptickets/i/nav/vacation_packages_on.gif"></a></div><div style="float:left;" name="flights"><a onclick="popUpOff();" target="_parent" href="http://tnidd014/trs/cheaptickets/flight_services/fare_grouped_search.xsl"><img alt="Flights" height="25" width="63" border="0" src="/cheaptickets/i/nav/flights_off.gif"></a></div><div style="float:left;" name="hotel"><a onclick="popUpOff();" target="_parent" href="http://tnidd014/trs/cheaptickets/accommodations/accommodation_search.xsl"><img alt="Hotels" height="25" width="63" border="0" src="/cheaptickets/i/nav/accommodations_off.gif"></a></div><div style="float:left;" name="car-services"><a onclick="popUpOff();" target="_parent" href="http://tnidd014/trs/cheaptickets/car_services/car_search.xsl"><img alt="Cars" height="25" width="63" border="0" src="/cheaptickets/i/nav/rentalcars_off.gif"></a></div><div style="float:left;" name="cruise-services"><a onclick="popUpOff();" target="_parent" href="http://tnidd014/trs/cheaptickets/cruise/cruise-redirect.xsl"><img alt="Cruises" height="25" width="63" border="0" src="/cheaptickets/i/nav/cruises_off.gif"></a></div><div style="float:left;" name="site59"><a onclick="popUpOff();" target="_parent" href="http://cheaptickets.lmdeals.com/"><img alt="Last Minute Trips" height="25" width="63" border="0" src="/cheaptickets/i/nav/last_minute_trips_off.gif"></a></div><div style="float:left;" name="deals"><a onclick="popUpOff();" target="_parent" href="http://tnidd014/trs/cheaptickets/content/deals/deals.xsl"><img alt="Deals" height="25" width="63" border="0" src="/cheaptickets/i/nav/deals_off.gif"></a></div><div style="float:right"></div></div><div style="position:absolute; left:0px; top:114px; width:760px; height:23px;" name="tab_sub_nav"><table cellspacing="0" cellpadding="0" border="0" width="760"><tr><td width="160" class="bg-a3"><img height="3" width="150" src="/SHARED/common/i/b.gif"></td><td align="right" height="25" width="100%" class="border-a4-bottom"><a class="link-a6" target="_parent" href="http://tnidd014/trs/cheaptickets/packages/packages_search.xsl?cmd=do-login">Join Now/Log In</a>
+				&nbsp;&nbsp;&nbsp;
+				<a class="link-a6" target="_parent" href="https://tnidd014/trs/cheaptickets/profile/am_profile_summary.xsl">View Itinerary/My Trips</a>&nbsp;&nbsp;&nbsp;<a class="link-a6" target="_parent" href="https://tnidd014/trs/cheaptickets/profile/am_profile_home.xsl">
+					My Profile
+				</a>
+					&nbsp;&nbsp;&nbsp;
+					<a target="_parent" class="link-a6" href="http://tnidd014/trs/cheaptickets/content/travel_tools/main_travel_tools.xsl">
+						Travel Resources
+					</a>
+				&nbsp;&nbsp;&nbsp;
+				<a class="link-a6" target="_parent" href="http://tnidd014/trs/cheaptickets/content/customer_service/cs_home.xsl">
+					Help
+				</a>
+				&nbsp;&nbsp;
+			</td></tr></table></div></div><div style="position:absolute; width:760px; height:140px; z-index:1; top:139px; left:0px; background-color:#ccf"></div><div style="position:absolute; width:380px; height:140px; z-index:4; top:139px; left:380px;"><div style="float:right; width:380px; height:140px; margin:0px 0px 0px 0px; z-index:3;" name="Section_D"><div style="float:left; width:380; height:auto; margin:0px 0px 0px 0px"><div style="float:left; margin:0px 0px 0px 0px"><!--AD Tag!--><script src="http://ad.doubleclick.net/adj/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=D;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;abr=!webtv;sz=380x140;tile=2;ord=2262770722895455862" language="JavaScript1.1"></script><script language="JavaScript1.1"> if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0) { document.write('<a href="http://ad.doubleclick.net/jump/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=D;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=380x140;tile=2;ord=2262770722895455862">');document.write('<img width="380" height="140" border="0" src="http://ad.doubleclick.net/ad/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=D;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=380x140;tile=2;ord=2262770722895455862"></a>') } </script></div></div></div></div><div style="position:absolute; left:0px; top:139px; width:765px; height:auto; z-index:2;" name="body"><div style="position:relative; width:765px; height:auto;"><div style="float:left; width:379px; height:auto;" name="Column_1"><div style="position:relative; width:380px; height:auto; z-index:1; margin:-7px 0px 0px 0px;" name="Section_B"><div style="position:relative; margin:0px 0px 0px 2px;" class="widgetWrapper"><div style="position:relative; margin:0px 0px 0px 0px;" id="widget"><div style="position:relative; background-image:url(/cheaptickets/i/widget/packages_widget_header.gif); background-repeat:no-repeat; width:378px; height:37px" id="widgetHeader"></div><div style="position:relative; height:181px; background-image:url(/cheaptickets/i/widget/widget_center.gif); background-repeat:repeat-y; width:377px;" class="widgetCenter" name="widgetCenter"><div style="position:relative; margin:0px 0px 0px 0px;" id="widgetContainer"><div style="float:left; margin:5px 0px 0px 5px"><div><form name="productSelectionForm" method="" action=""><div style="margin:5px 20px 0px 0px; float:left;"><font class="home">Search For</font></div><div style="float:left; margin:0px 0px 0px 0px;"><div style="width:150; height:51;"><div style="margin:0px 0px 0px 0px; width:150px; height:17px"><div style="margin:0px 0px 0px 0px; float:left; width:150px; height:17px;"><div name="searchType" style="float:left; margin:2px 0px 0px 0px"><input type="radio" name="searchType" class="home" value="flight-hotel-car" checked="true" onclick=""></div><div name="label_1" style="float:left; margin:5px 0px 0px 0px"><font class="home">Flight + Hotel + Car</font></div></div></div><div style="margin:0px 0px 0px 0px; width:150px; height:17px"><div style="margin:0px 0px 0px 0px; float:left; width:150px; height:17px;"><div name="searchType" style="float:left; margin:2px 0px 0px 0px"><input type="radio" name="searchType" class="home" value="flight-hotel" onclick=""></div><div name="label_2" style="float:left; margin:5px 0px 0px 0px"><font class="home">Flight + Hotel</font></div></div></div><div style="margin:0px 0px 0px 0px; width:150px; height:17px"><div style="margin:0px 0px 0px 0px; float:left; width:150px; height:17px;"><div name="searchType" style="float:left; margin:2px 0px 0px 0px"><input type="radio" name="searchType" class="home" value="flight-car" onclick=""></div><div name="label_12" style="float:left; margin:5px 0px 0px 0px"><font class="home">Flight + Car</font></div></div></div></div></div><div name="image_1" style="margin:0px 0px 0px 0px;"><img name="image_1" class="foo" border="" src="/cheaptickets/i/widget/book_together_and_save.gif" width="113" height="54"></div></form></div><div name="spacer_1" class="foo" style="clear:both; margin:0px 0px 0px 0px"></div></div><div style="float:left; margin:5px 0px 0px 5px"><div style="display:inline; width:345px" id="pkgLayer"><form name="pkgSearchForm" method="post" action="index_01.xsl"><div name="spacer_1" class="foo" style="clear:both; margin:10px 0px 0px 0px"></div><div name="wl_depart_return_flight_home_widget" style="margin:0px 0px 0px 0px;"><div style="float:left; clear:both; margin:0px 2px 0px 0px;"><input type="text" name="package-departure-city" class="content-fxd-sm" value="Leaving from" maxlength="30" size="13" onclick="javascript: if(this.value == 'Leaving from') this.value = '';" onchange="" onblur="javascript: if(this.value == '') this.value = 'Leaving from'"></div><div style="float:left; margin:0px 5px 0px 5px" name="mag_glass"><a href="#" style="" border="" align="" onclick="window.open('http://tnidd014/trs/cheaptickets/airport_tool/index.xsl?formname=pkgSearchForm&amp;fieldname=package-departure-city','MyWindow','scrollbars=yes,height=410,width=460,left=50,top=50'); return false"><img height="20" width="20" src="/cheaptickets/i/widget/icon_magnify.gif" border="" class="home" name="mag_glass"></a></div><div style="margin:5px 11px 0px 0px; float:left;"><font class="content-fxd-sm">Leave on</font></div><div name="packageDeparture-month" style="float:left; margin:0px 5px 0px 0px;"><select name="packageDeparture-month" size="1" class="content-fxd-sm" onchange="popDate(this.form,'packageDeparture');"><option value="0">Jan</option><option value="1">Feb</option><option value="2">Mar</option><option value="3" selected="true">Apr</option><option value="4">May</option><option value="5">Jun</option><option value="6">Jul</option><option value="7">Aug</option><option value="8">Sep</option><option value="9">Oct</option><option value="10">Nov</option><option value="11">Dec</option></select></div><div name="packageDeparture-day" style="margin:0px 0px 0px 0px;"><select name="packageDeparture-day" size="1" class="content-fxd-sm" onchange=""><option value="1">1</option><option value="2" selected="true">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option></select></div><input value="2004" name="packageDeparture-year" type="hidden"><div name="spacer_1" class="home" style="clear:both; margin:10px 0px 0px 0px"></div><div style="float:left; margin:0px 2px 0px 0px;"><input type="text" name="package-destination-city" class="content-fxd-sm" value="Going to" maxlength="30" size="13" onclick="javascript: if(this.value == 'Going to') this.value = '';" onchange="" onblur="javascript: if(this.value == '') this.value = 'Going to'"></div><div name="" style="float:left; margin:0px 5px 0px 5px;"><a href="#" style="" border="" align="" onclick="window.open('http://tnidd014/trs/cheaptickets/airport_tool/index.xsl?formname=pkgSearchForm&amp;fieldname=package-destination-city','MyWindow','scrollbars=yes,height=410,width=460,left=50,top=50');return false"><img height="20" width="20" src="/cheaptickets/i/widget/icon_magnify.gif" border="" class="home" name="mag_glass"></a></div><div style="margin:5px 7px 0px 0px; float:left;"><font class="content-fxd-sm">Return on</font></div><div name="packageReturning-month" style="float:left; margin:0px 5px 0px 0px;"><select name="packageReturning-month" size="1" class="content-fxd-sm" onchange="popDate(this.form,'packageReturning');"><option value="0">Jan</option><option value="1">Feb</option><option value="2">Mar</option><option value="3" selected="true">Apr</option><option value="4">May</option><option value="5">Jun</option><option value="6">Jul</option><option value="7">Aug</option><option value="8">Sep</option><option value="9">Oct</option><option value="10">Nov</option><option value="11">Dec</option></select></div><div name="packageReturning-day" style="margin:0px 0px 0px 0px;"><select name="packageReturning-day" size="1" class="content-fxd-sm" onchange=""><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9" selected="true">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option></select></div><input value="2004" name="packageReturning-year" type="hidden"></div><div name="spacer_1" class="foo" style="clear:both; margin:10px 0px 0px 0px"></div><div name="wl_adult_children" style="margin:0px 0px 0px 0px;"><div name="adults" style="margin:0px 5px 0px 0px; float:left"><select id="adults" name="adults" class="home" size="1"><option value="1" name="1" class="home" selected="true">1</option><option value="2" name="2" class="home">2</option><option value="3" name="3" class="home">3</option><option value="4" name="4" class="home">4</option></select></div><div style="margin:5px 11px 0px 0px; float:left;"><a href="#" onclick="window.open('../components/age_rules.xsl?product=package#adults','Passenger','menubar=no,toolbar=yes,resizable=yes,scrollbars=yes,height=330,width=445,screenX=175,screenY=200,top=200,left=200');return false">Adults</a></div><div name="childrenNum" style="float:left; margin:0px 5px 0px 0px;"><select name="childrenNum" class="home" size="1"><option value="0" name="0" class="home">0</option><option value="1" name="1" class="home">1</option><option value="2" name="2" class="home">2</option><option value="3" name="3" class="home">3</option><option value="4" name="4" class="home">4</option></select></div><div style="float:left; margin:5px 11px 0px 0px"><a href="#" onclick="window.open('../components/age_rules.xsl?product=package#children','Passenger','menubar=no,toolbar=yes,resizable=yes,scrollbars=yes,height=330,width=445,screenX=175,screenY=200,top=200,left=200');return false">Children</a></div></div><div name="spacer_1" class="foo" style="clear:both; margin:10px 0px 0px 0px"></div><div name="wl_options_submit_form_widget" style="margin:5px 0px 0px 0px; float:left; width:345px"><div name="" style="float:left; margin:0px 0px 0px 0px"><div name="" style="float:left; margin:0px 0px 0px 0px"><img name="" class="" border="0" src="/cheaptickets/i/arrow-clickable-next.gif" width="11" height="11"></div><div style="float:left; margin:0px 0px 0px 5px;"><a style="font:10px/11px verdana arial, tahoma, 'sans serif'" target="_parent" onclick="neatRedirect(document.forms['pkgSearchForm'], 'F'); return false;" href="#">More Search Options</a></div></div><div style="margin:0px 0px 0px 0px; float:right"><a onclick="if (clicked == false) clicked = true; neatRedirect(document.forms['pkgSearchForm'], 'T'); return false;" href="#"><div style="margin:0px 0px 0px 0px;" name=""><img height="22" width="75" src="/cheaptickets/i/widget/button_75_search.gif" border="0"></div></a></div></div><input type="hidden" name="DD" value="CHEAPTICKETS"><input type="hidden" name="hotelLocationKind" value="LOC_CITY"><input type="hidden" name="hotelRating" value="=AnyClass"><input type="hidden" name="childAge1" value="-1"><input type="hidden" name="childAge2" value="-1"><input type="hidden" name="childAge3" value="-1"><input type="hidden" name="childAge4" value="-1"><input type="hidden" name="checkAir" value=""><input type="hidden" name="checkCar" value=""><input type="hidden" name="checkHotel" value=""><input type="hidden" name="carClass" value="Compact_2_4_Doors selected"><input type="hidden" name="carPickupTime" value="10"><input type="hidden" name="carReturnTime" value="10"><input type="hidden" name="screen" value="CPSearch"><input type="hidden" name="redirect" value=""><input type="hidden" name="mode" value=""><input type="hidden" name="fromLocationId" value=""><input type="hidden" name="toLocationId" value=""><input type="hidden" name="hotelLocationId" value=""><input type="hidden" name="hotelLocation" value=""><input type="hidden" name="hotelLocationToAdd" value=""><input type="hidden" name="minors" value="-1"><input type="hidden" name="rooms" value="1"><input type="hidden" name="cmd" value="display-page"><input value="false" name="area_resolution" type="hidden"><input value="false" name="addl_srch_rslts" type="hidden"><input value="packages/packages_search.xsl" name="search_start_page" type="hidden"><input value="Packages" name="product_path" type="hidden"><input value="no-product" name="attachment_product" type="hidden"><input value="package" name="widget_type" type="hidden"><input value="no-options-selected" name="orig_srch_pg" type="hidden"></form></div></div></div></div><div style="position:relative; background-image:url(/cheaptickets/i/widget/widget_bottom_edge.gif); background-repeat:no-repeat; height:10px; width:377px;" id="widgetBottomEdge"></div></div></div></div><div style="float:left; width:380px; height:auto; margin:0px 0px 5px 0px;" name="Section_C"><div style="position:relative; margin:0px 0px 0px 3px;" class="section_C_wrapper"><div style="float:left; width:145px; height:auto; margin:0px 0px 0px 0px"><div style="float:left; margin:5px 0px 5px 0px"><!--AD Tag!--><script src="http://ad.doubleclick.net/adj/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;abr=!webtv;sz=125x125;tile=4;ord=2262770722895455862" language="JavaScript1.1"></script><script language="JavaScript1.1"> if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0) { document.write('<a href="http://ad.doubleclick.net/jump/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=125x125;tile=4;ord=2262770722895455862">');document.write('<img width="125" height="125" border="0" src="http://ad.doubleclick.net/ad/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=125x125;tile=4;ord=2262770722895455862"></a>') } </script></div></div><div style="float:right; width:225px; height:auto; margin:5px 0px 5px 0px"><div style="float:left; margin:"><!--AD Tag!--><script src="http://ad.doubleclick.net/adj/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=C;pos=top;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;abr=!webtv;sz=1x1;tile=5;ord=2262770722895455862" language="JavaScript1.1"></script><script language="JavaScript1.1"> if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0) { document.write('<a href="http://ad.doubleclick.net/jump/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=C;pos=top;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=1x1;tile=5;ord=2262770722895455862">');document.write('<img width="1" height="1" border="0" src="http://ad.doubleclick.net/ad/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=C;pos=top;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=1x1;tile=5;ord=2262770722895455862"></a>') } </script><!--AD Tag!--><script src="http://ad.doubleclick.net/adj/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=C;pos=lower;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;abr=!webtv;sz=1x1;tile=5;ord=2262770722895455862" language="JavaScript1.1"></script><script language="JavaScript1.1"> if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0) { document.write('<a href="http://ad.doubleclick.net/jump/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=C;pos=lower;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=1x1;tile=5;ord=2262770722895455862">');document.write('<img width="1" height="1" border="0" src="http://ad.doubleclick.net/ad/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=C;pos=lower;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=1x1;tile=5;ord=2262770722895455862"></a>') } </script></div></div></div></div></div><div style="float:left; width:380px; height:auto;" name="Column_2"><div style="float:right; width:380px; height:140px; margin:0px 0px 0px 0px;" name="Section_D"></div><div style="float:right; clear:both; width:380px; height:auto;" name="Section_E"><div style="float:left; width:380px; height:auto; margin:0px 0px 0px 0px"><div style="float:left; margin:"><!--AD Tag!--><script src="http://ad.doubleclick.net/adj/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=E;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;abr=!webtv;sz=1x1;tile=3;ord=2262770722895455862" language="JavaScript1.1"></script><script language="JavaScript1.1"> if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0) { document.write('<a href="http://ad.doubleclick.net/jump/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=E;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=1x1;tile=3;ord=2262770722895455862">');document.write('<img width="1" height="1" border="0" src="http://ad.doubleclick.net/ad/cheaptickets.dart/packages;pgrp=packages;sgrp=packages_search_simple;zone=E;ach=;ach=;acc=;ba=;ca=;dc=;sa=;pa=;ac=;ach=;st=;sz=1x1;tile=3;ord=2262770722895455862"></a>') } </script></div></div></div></div></div><div style="position:relative; float:left; clear:both; width:760px; height:37px;" name="Section_F"><script language="javascript">
+	function resetValue(f) {
+	  if (document.forms['subscribeform'].elements[f].value == '') {
+	    if (f == "email") { document.forms['subscribeform'].elements[f].value = 'E-mail Address';}
+	    else {document.forms['subscribeform'].elements[f].value = 'Home Airport';}
+	  }
+	}
+	
+	function submitValues() {
+	  if (document.forms['subscribeform'].elements[3].value ==  'E-mail Address') { 
+	    document.forms['subscribeform'].elements[3].value = ''; 
+	  }
+	  if (document.forms['subscribeform'].elements[4].value ==  'Home Airport') { 
+	    document.forms['subscribeform'].elements[4].value = ''; 
+	  }
+	  document.forms['subscribeform'].submit();
+	}
+	
+	function testValue(f) {
+	  if (f == "email") {
+	      if (document.forms['subscribeform'].elements[f].value == 'E-mail Address')  document.forms['subscribeform'].elements[f].value=''; 
+	  }
+	  else {
+	      if (document.forms['subscribeform'].elements[f].value == 'Home Airport')  document.forms['subscribeform'].elements[f].value=''; 
+	  }
+	}
+</script><div style="width:760px; height:37px; border-top: solid 1px #f93; background:#ffc;"><form name="subscribeform" method="post" action="http://tnidd014/trs/cheaptickets/content/newsletter/signup.xsl"><input value="quick-reg-signup" name="cmd" type="hidden"><input value="cheaptickets" name="site" type="hidden"><input value="Cheap Tickets" name="network" type="hidden"><span style="float:left; margin: 4px 4px 0px 4px"><span id="emailSignUpHeading" style="float:left; margin: 8px 4px 0px 4px">
+				Sign up for Great Deals by E-mail
+			</span><span id="text-small" style="float:left; margin: 10px 4px 0px 8px"><a onclick="window.open('http://tnidd014/trs/cheaptickets/components/sample_newsletter.xsl','newsletter','width=665,height=400,status=no,toolbar=no,menubar=no,scrollbars=yes'); return false" href="#">View Sample</a></span></span><span style="float:left; margin: 4px 4px 0px 4px"><span style="float:left; margin: 4px 4px 0px 4px"><input onblur="resetValue(this.name)" onfocus="testValue(this.name)" size="17" value="E-mail Address" style="margin:0; padding:0; width:100px" name="email" type="text"></span><span style="float:left; margin: 4px 4px 0px 4px"><input onblur="resetValue(this.name)" onfocus="testValue(this.name)" size="17" value="Home Airport" style="margin:0; padding:0; width:100px" name="home-airport" type="text"></span><span style="float:left; margin: 4px 4px 0px 4px;"><a class="text-small" onclick="window.open('http://tnidd014/trs/cheaptickets/airport_tool/index.xsl?formname=subscribeform&amp;fieldname=home-airport','MyWindow','scrollbars=yes,height=410,width=460,left=50,top=50');return false" href="#"><img border="0" height="19" width="20" alt="Look up Airport Code" src="/cheaptickets/i/widget/icon_magnify.gif"></a></span><span style="float:left; margin: 4px 4px 0px 4px"><input value="packages/packages_search.xsl" name="start-page" type="hidden"><a onclick="submitValues(); return false" href="#"><img border="0" height="22" width="100" alt="Sign Me Up" src="/cheaptickets/i/btn_sign_me_up_02.gif"></a></span></span></form></div></div><div style="position:relative; float:left; width:760px; height:85px; clear:both;"><table class="bg-a5" width="760" border="0" cellspacing="0" cellpadding="3"><tr><td style="padding-left:10px;" align="left" height="30" class="bg-a3"></td><td class="bg-a3" align="right"><a class="text-small" href="#" onclick="window.open('http://tnidd014/trs/cheaptickets/home/privacy_pop-up.xsl','MyWindow','resizable=yes,scrollbars=yes,height=170,width=470,screenX=200,screenY=200') ; return false">
+				    We're committed to protecting your privacy.</a>&nbsp;<img src="/cheaptickets/i/lock.gif">&nbsp;
+
+				</td></tr><tr align="center"><td colspan="2" class="footer"><br><a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/about_us/about_us.xsl">
+						About Us
+					</a>
+					&nbsp;|&nbsp;
+				<a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/about_us/privacy.xsl">
+						Privacy Policy
+					</a>
+					&nbsp;|&nbsp;
+				<a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/about_us/terms.xsl">
+						Terms of Use
+					</a>
+					&nbsp;|&nbsp;
+				<a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/about_us/join_team.xsl">
+						Careers
+					</a>
+					&nbsp;|&nbsp;
+				<a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/sitemap/index.xsl">
+						Site Map
+					</a>
+					&nbsp;|&nbsp;
+				<a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/about_us/contact_us.xsl">
+						Contact Us
+					</a>
+					&nbsp;|&nbsp;
+				<a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/customer_service/cs_home.xsl">
+					Help
+				</a>
+					&nbsp;|&nbsp;
+					<a class="footer" target="_parent" href="http://tnidd014/trs/cheaptickets/content/about_us/linkshare.xsl">
+						Affiliate Program
+					</a></td></tr><tr align="center"><td colspan="2" class="footer">Copyright &copy; 2002-2004, Cheap Tickets.  All rights reserved. CST 2062836-40.
+					&nbsp;
+					<a class="footer" onClick="window.open('http://tnidd014/trs/cheaptickets/components/service_fees.xsl#1','','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=470,height=600');return false" href="#">
+						Fees
+					</a><br><br></td></tr></table></div><div style="position:relative; float:left; width:760px; height:30px; clear:both;"><div style="clear:both; width:760px; height:25"><table cellpadding="3" cellspacing="0" border="0" width="750"><tr><td align="center"><script language="JavaScript">
+					    if (document.getElementById)
+					    document.write("");
+					    else
+					    document.write("<a onClick='window.open(\"../home/browser.xsl\",\"browser\",\"menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=425,screenX=100,screenY=100,top=100,left=100\");return false' href='#'><b><font color='red'>Improve Your Web Experience</font></b></a>");
+				</script></td></tr></table><table cellpadding="10" cellspacing="0" border="0" width="760"><tr><td align="center"><img alt="Galileo" height="23" width="134" src="/SHARED/common/i/power_galileo.gif"></td></tr></table></div></div></div></div></body></html>
