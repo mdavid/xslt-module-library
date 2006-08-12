@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Edited with XML Spy v4.2 -->
+<?xml-stylesheet type="text/xsl" href="cdcatalog_choose2.xsl"?> 
+<catalog>
+	<cd>
+		<title>Empire Burlesque</title>
+		<artist>Book</artist>
+		<name>Transaction Yeah</name>
+		<country>USA</country>
+		<company>Columbia</company>
+		<price>10.90</price>
+		<year>1985</year>
+		<quote>I am cool</quote>
+		<quote>You are cool</quote>
+		<quote>We are cool</quote>
+	</cd>
+	<cd>
+		<title>Hide your heart</title>
+		<artist>Journal Article</artist>
+		<journal>Transactions</journal>
+		<country>UK</country>
+		<company>CBS Records</company>
+		<price>9.90</price>
+		<year>1988</year>
+		<quote>I am cool</quote>
+		<quote>You are cool</quote>
+		<quote>We are cool</quote>
+	</cd>
+	<cd>
+		<title>Greatest Hits</title>
+		<artist>Dan Palmer</artist>
+		<country>USA</country>
+		<company>RCA</company>
+		<price>9.90</price>
+		<year>1982</year>
+		<quote>I am cool</quote>
+		<quote>You are cool</quote>
+		<quote>We are cool</quote>
+	</cd>
+</catalog>

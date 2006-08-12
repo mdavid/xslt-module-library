@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<supplements><supp>
+    <supp-desc>Sea View</supp-desc>
+    <supp-price>10.00</supp-price>
+  </supp><supp>
+    <supp-desc>Half Board</supp-desc>
+    <supp-price>30.00</supp-price>
+  </supp><supp>
+    <supp-desc>Half Board (child)</supp-desc>
+    <supp-price>15.00</supp-price>
+  </supp><supp>
+    <supp-desc>Bed &amp; Breakfast</supp-desc>
+    <supp-price>4.00</supp-price>
+  </supp><supp>
+    <supp-desc>Bed &amp; Breakfast (child)</supp-desc>
+    <supp-price>2.00</supp-price>
+  </supp><supp>
+    <supp-desc>Bed &amp; Breakfast (child)</supp-desc>
+    <supp-price>2.00</supp-price>
+  </supp><supp>
+    <supp-desc>Full Board</supp-desc>
+    <supp-price>60.00</supp-price>
+  </supp><supp>
+    <supp-desc>Full Board (child)</supp-desc>
+    <supp-price>30.00</supp-price>
+  </supp><supp>
+    <supp-desc>Balcony</supp-desc>
+    <supp-price>8.00</supp-price>
+  </supp></supplements>

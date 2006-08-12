@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2004-11-10">
+  <Items>
+    <Item>
+      <SmallImage>
+        <URL>:http//images.amazon.com/images/P/0684858398.02._SCTHUMBZZZ_.jpg</URL>
+        <Height>60</Height>
+        <Width>39</Width>
+      </SmallImage>
+    </Item>
+  </Items>
+</ItemLookupResponse>

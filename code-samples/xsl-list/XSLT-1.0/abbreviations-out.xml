@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<abbreviations>
+   <template key-sequence="ai">
+      <![CDATA[
+      <xsl:apply-imports/>
+      ]]>
+      </template>
+   <template key-sequence="an">
+      <![CDATA[
+      <xsl:attribute name="${caret}"></xsl:attribute>
+      ]]>
+      </template>
+   <template key-sequence="asn">
+      <![CDATA[
+      <xsl:attribute-set name="${caret}"> </xsl:attribute-set>
+      ]]>
+      </template>
+   <template key-sequence="ats">
+      <![CDATA[
+      <xsl:apply-templates select="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="atsm">
+      <![CDATA[
+      <xsl:apply-templates select="${caret}" mode=""/>
+      ]]>
+      </template>
+   <template key-sequence="co">
+      <![CDATA[
+      <xsl:copy>${caret}</xsl:copy>
+      ]]>
+      </template>
+   <template key-sequence="com">
+      <![CDATA[
+      <xsl:comment>${caret}</xsl:comment>
+      ]]>
+      </template>
+   <template key-sequence="cos">
+      <![CDATA[
+      <xsl:copy-of select="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="ctn">
+      <![CDATA[
+      <xsl:call-template name="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="ctnwp">
+      <![CDATA[
+      <xsl:call-template name="${caret}"> <xsl:with-param name="" select=""/> </xsl:call-template>
+      ]]>
+      </template>
+   <template key-sequence="cwt">
+      <![CDATA[
+      <xsl:choose> <xsl:when test="${caret}"> </xsl:when> </xsl:choose>
+      ]]>
+      </template>
+   <template key-sequence="cwto">
+      <![CDATA[
+      <xsl:choose> <xsl:when test="${caret}"> </xsl:when> <xsl:otherwise> </xsl:otherwise> </xsl:choose>
+      ]]>
+      </template>
+   <template key-sequence="en">
+      <![CDATA[
+      <xsl:element name="${caret}"> </xsl:element>
+      ]]>
+      </template>
+   <template key-sequence="f">
+      <![CDATA[
+      <xsl:fallback> ${caret} </xsl:fallback>
+      ]]>
+      </template>
+   <template key-sequence="fes">
+      <![CDATA[
+      <xsl:for-each select="${caret}"> </xsl:for-each>
+      ]]>
+      </template>
+   <template key-sequence="imh">
+      <![CDATA[
+      <xsl:import href="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="inh">
+      <![CDATA[
+      <xsl:include href="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="it">
+      <![CDATA[
+      <xsl:if test="${caret}"></xsl:if>
+      ]]>
+      </template>
+   <template key-sequence="k">
+      <![CDATA[
+      <xsl:key name="${caret}" match="" use=""/>
+      ]]>
+      </template>
+   <template key-sequence="m">
+      <![CDATA[
+      <xsl:message> ${caret} </xsl:message>
+      ]]>
+      </template>
+   <template key-sequence="mt">
+      <![CDATA[
+      <xsl:message terminate="${caret}"></xsl:message>
+      ]]>
+      </template>
+   <template key-sequence="n">
+      <![CDATA[
+      <xsl:number/>
+      ]]>
+      </template>
+   <template key-sequence="nc">
+      <![CDATA[
+      <xsl:number count="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="o">
+      <![CDATA[
+      <xsl:otherwise> ${caret} </xsl:otherwise>
+      ]]>
+      </template>
+   <template key-sequence="oe">
+      <![CDATA[
+      <xsl:output encoding="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="om">
+      <![CDATA[
+      <xsl:output method="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="pin">
+      <![CDATA[
+      <xsl:processing-instruction name="${caret}"></xsl:processing-instruction>
+      ]]>
+      </template>
+   <template key-sequence="pn">
+      <![CDATA[
+      <xsl:param name="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="pse">
+      <![CDATA[
+      <xsl:preserve-space elements="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="s">
+      <![CDATA[
+      <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"> ${caret} </xsl:stylesheet>
+      ]]>
+      </template>
+   <template key-sequence="ss">
+      <![CDATA[
+      <xsl:sort select="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="sse">
+      <![CDATA[
+      <xsl:strip-space elements="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="tm">
+      <![CDATA[
+      <xsl:template match="${caret}"> </xsl:template>
+      ]]>
+      </template>
+   <template key-sequence="tmm">
+      <![CDATA[
+      <xsl:template match="${caret}" mode=""> </xsl:template>
+      ]]>
+      </template>
+   <template key-sequence="tn">
+      <![CDATA[
+      <xsl:template name="${caret}"> </xsl:template>
+      ]]>
+      </template>
+   <template key-sequence="tnm">
+      <![CDATA[
+      <xsl:template name="${caret}" match=""></xsl:template>
+      ]]>
+      </template>
+   <template key-sequence="vn">
+      <![CDATA[
+      <xsl:variable name="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="vns">
+      <![CDATA[
+      <xsl:variable name="${caret}" select=""/>
+      ]]>
+      </template>
+   <template key-sequence="vos">
+      <![CDATA[
+      <xsl:value-of select="${caret}"/>
+      ]]>
+      </template>
+   <template key-sequence="wpn">
+      <![CDATA[
+      <xsl:with-param name="${caret}" select=""/>
+      ]]>
+      </template>
+   <template key-sequence="x">
+      <![CDATA[
+      <?xml version="1.0"?> ${caret}
+      ]]>
+      </template>
+   <template key-sequence="xe">
+      <![CDATA[
+      <?xml vesion="1.0" encoding="${caret}"?>
+      ]]>
+      </template>
+   <template key-sequence="xe8">
+      <![CDATA[
+      <?xml vesion="1.0" encoding="UTF-8"?> ${caret}
+      ]]>
+      </template>
+   <template key-sequence="xei">
+      <![CDATA[
+      <?xml vesion="1.0" encoding="ISO-8859-1"?> ${caret}
+      ]]>
+      </template>
+</abbreviations>

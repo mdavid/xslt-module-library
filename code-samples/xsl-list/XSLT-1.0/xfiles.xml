@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+  <files>
+    <file src="test-group.xsl"/>
+    <file src="test-group-m.xsl"/>
+    <file src="test-group.xml"/>
+    <file src="output.xml"/>
+    <file src="output-m.xml"/>
+  </files>

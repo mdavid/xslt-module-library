@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<form-data>
+  <form>
+    <field id="foo" value="This is a string of text aligned on the right" align="right" image="foo.gif" image-width="100px"  image-height="100px" />
+    <field id="bar" value="This is a string of text aligned on the left" align="left" image="bar.gif" image-width="100px" image-height="100px" />
+  </form>
+</form-data>

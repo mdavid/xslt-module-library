@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project>
+  <server>
+    <cur_dir>home</cur_dir>
+    <css>/x2x2x/css/x2x2x.css</css>
+  </server>
+  <general/>
+  <location/>
+  <lead_content>
+  	<item type="sectionTitle" value="Saxon.NET Project" href="/x2x2x/home">
+  	<p>Welcome to the X2x2X.org Community-based Saxon.NET Open Source project!  Heres a quick glimpse of the project status and the latest news and events related to its development efforts and promotion.</p>
+  	</item>
+  	<item type="blogTitle" value="Project Status" href="/x2x2x/home/general_info/project_summary">
+      	<p class="postFooter">Please see <a href="/x2x2x/home/general_info/project_legend">Project Legend</a> for a definition of the icons and symbols used on this site. (Definitions for * and ** are found there as well)</p>
+		<p class="post"><img src="/x2x2x/images/16x16xred.ico" /> > Status of <a href="/x2x2x/home/project_areas/downloads/">Last Release</a>. Bits released on Sept. 25th, 2004. </p>
+		<p class="post"><img src="/x2x2x/images/16x16xblue.ico" /> > Current Work In-Progress Status.  Bits scheduled for a mid-October, 2004 release.</p> 
+    </item>
+    <item type="sectionTitle" value="Latest Saxon.NET Project News" href="/x2x2x/home/project_areas/project_blog">
+      <p>A summary of the latest news from the Saxon.NET development project.  Further news item can be found in the <a href="/x2x2x/home/project_areas/project_blog">Project Blog</a> section of the site.</p>
+    </item>
+    <item type="blogTitle" value="Saxon.NET Beta VI to be posted soon..." href="http://www.x2x2x.org/saxon.net">
+			<p class="postFooter">Mon, 1 Nov 2004 12:35:46 GMT ::  by M. David Peterson</p>
+			<p class="post">I've got a new build done and the beginning of an encapsulation library that will reduce the required namespace imports to one and will allow any XmlDocument, XPathDocument, File, or Stream .NET types as input sources and return a string that can be loaded into any of these same types for further processing (Saxon.NET XSLT or XQuery or System.Xml.Xsl), saving to file, pushed out onto a stream, or serialized as a SOAP message for delivery to a remote client for processing.  Hope to get at least the new build and the start of that library posted today sometime.  Subscribe to the RSS or ATOM feeds for notification of its availability.</p>
+      <p class="post">Cheers!</p>
+      <p class="post" xmlns:M="http://www.mavidpeterson.com"><M:D/></p>
+    </item>
+    <item type="blogTitle" value="Pics from XML DevCon V" href="http://www.mdavidpeterson.com/">
+			<p class="postFooter">Mon, 1 Nov 2004 10:34:46 GMT ::  by M. David Peterson</p>
+			<p class="post">Pics that I took at the XML DevCon can now be seen by clicking the "View Complete Album" link from the quickview photo frame contained on the main page of my personal <a href="http://www.mdavidpeterson.com">web site/blog</a>.  What an amazing conference!  I will write more about it soon... </p>
+    </item>
+    <item type="blogTitle" value="Slides from XML DevCon V" href="http://www.sellsbrothers.com/conference">
+			<p class="postFooter">Mon, 1 Nov 2004 10:32:26 GMT ::  by M. David Peterson</p>
+			<p class="post">A lot more updates to come but the slides from Kurt Cagles XSLT 2.0 and the .NET platform/Saxon.NET can be viewed <a href="http://www.x2x2x.org/x2x2x/saxon.net/pub/kurtcagle.htm">here</a>.  Unfortunately time was short and we were not able to show any of the demos we had prepared but the primary objective of the presentation (through encouragement from Dr. Kay which both Kurt and I agreed with) was to showcase XSLT 2.0 first and if time allowed to highlight Saxon.NET.  None-the-less, if you would like to view the slides I created for the demo portion of the presentation they can be view <a href="http://www.x2x2x.org/x2x2x/saxon.net/pub/saxon.net.htm">here</a>.</p>
+      <p class="post">Begrudgingly I have to admit that these are both best viewed in IE 6.0 as it is scripted for IE (used Save as Web Page... in Powerpoint) to allow full screen mode as well as larger graphic rendering from outline mode (not sure why that is but I havent looked at the code and dont really care to either... maybe I will see if OpenOffice can import them and them save them in a more Firefox friendly format...)</p>
+		</item>
+    <item type="blogTitle" value="Saxon.NET Beta 4 now available!" href="/x2x2x/home/project_areas/downloads">
+			<p class="postFooter">Thur, 23 Sept 2004 14:24:15 GMT ::  by M. David Peterson</p>
+			<p class="post">This is probably the most significant release yet as it fixes all of the irritating command line usage issues.  The -o option works and you no longer have to preface the file names with "file".</p>
+		</item>
+    <item type="blogTitle" value="Saxon.NET Beta 3 now available!" href="/x2x2x/home/project_areas/downloads">
+    	<p class="postFooter">Tues, 21 Sept 2004 20:36:25 GMT ::  by M. David Peterson</p>
+    	<p class="post"></p>
+    </item>
+    <item type="blogTitle" value="A Conversation w/ Dr. Michael Kay on XML Technologies" href="http://www.stylusstudio.com/michael_kay.html">
+    	<p class="postFooter">Fri, 06 Aug 2004 20:36:25 GMT ::  by M. David Peterson</p>
+    	<p class="post">An interesting article interviewing Dr. Kay on XSLT 2.0, XPath 2.0, and XQuery 1.0.</p>
+    </item>
+    <item type="blogTitle" value="X2x2X.org SWAG Store Now Open!" href="http://www.cafeshops.com/x2x2x" target="_new">
+    	<p class="postFooter">Sat, 31 Jul 2004 14:40:32 GMT ::  by M. David Peterson</p>
+    	<p class="post">Show your support of X2x2x.org, Saxon.NET, and Open Source software with a variety of SWAG items available in our new SWAG shop located at <a href="http://www.cafeshops.com/x2x2x" target="_new">http://www.cafeshops.com/x2x2x</a>.</p>
+    	<p class="post">Never before has supporting Open Source come with the benefit of owning such attention grabbing products such as these!  <a href="http://www.cafeshops.com/x2x2x" target="_new">Come see for yourself</a> why this isn't just any old SWAG...</p>
+    	<p class="post">&#160;&#160;&#160;&#160;<a href="http://www.cafeshops.com/x2x2x.12655938"><img src="http://www.x2x2x.org/x2x2x/images/visor.jpg" border="0" /></a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="http://www.cafeshops.com/x2x2x.12655919"><img src="http://www.x2x2x.org/x2x2x/images/jersey.jpg" border="0" /></a></p>
+    	<p class="post">&#160;&#160;&#160;&#160;<a href="http://www.cafeshops.com/x2x2x.12655935"><img src="http://www.x2x2x.org/x2x2x/images/apron.jpg" border="0" /></a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="http://www.cafeshops.com/x2x2x.12655931"><img src="http://www.x2x2x.org/x2x2x/images/coffeemug.jpg" border="0" /></a></p>
+    	<p class="post">Lots more to choose from so pay a visit to our <a href="http://www.cafeshops.com/x2x2x" target="_new">SWAG</a> store and show your support for Saxon.NET and other X2x2X Open Source projects while adding handsomely to your SWAG collection!</p>
+    </item>
+    <item type="blogTitle" value="First look at xameleon project GUI..." href="/x2x2x/home/project_areas/project_blog/">
+    	<p class="postFooter">Sun, 01 Aug 2004 02:06:45 GMT ::  by M. David Peterson</p>
+    	<p class="post">xameleon stands for "eXtensible Adaptation Markup Extension Library Engine w/ Open iNtegration".  The general idea is to create a plug-in style IDE that uses an extensible library of XML elements that make the process of adapting and transforming data (and generate any associated Java, C#, ASP.NET, etc... code that goes along with it) as simple as adding files to a project, telling the engine what type of output you are looking for, set any further particulars, and then click go and let the engine to the rest of the work for you.  More on what xameleon is or will be coming soon but in the mean time check out the screen shots of the current GUI design.  This is liable to change at any given time but this should help give you a clearer picture on just what the xameleon project is all about.</p>
+    	<p class="post">Image one can be seen <a href="/x2x2x/images/xameleonGUIOne.gif">here</a>.</p>
+    	<p class="post">Image two can be seen <a href="/x2x2x/images/xameleonGUITwo.gif">here</a>.</p>
+    	<p class="post">More to come in the near future.</p>
+    </item> 
+    <item type="blogTitle" value="Temporary docs for Phase One Beta 1 release" href="http://www.x2x2x.org/x2x2x/home/project%5Fareas/documentation/">
+    <p class="postFooter">Sat, 31 Jul 2004 22:10:12 GMT ::  by M. David Peterson</p>
+    <p class="post">Temporary documentation for the Phase One Beta 1 bits released on July 27th, 2004 can be found <a href="/x2x2x/home/project%5Fareas/documentation/">here</a>.</p>
+    </item> 
+    <item type="blogTitle" value="Saxon.NET Phase One Beta 1 now available!" href="http://www.x2x2x.org/x2x2x/home">
+    <p class="postFooter">Tues, 27 Jul 2004 20:45:32 GMT ::  by M. David Peterson</p>
+    <p class="post">Looking for the Saxon.NET Phase One Beta 1 download? You can access it <a href="http://www.x2x2x.org/x2x2x/home/project%5Fareas/downloads/Saxon.NET.zip"> here</a>.</p>
+    </item>
+    <item type="blogTitle" value="Transcript from Tuesday's launch" href="http://www.x2x2x.org/x2x2x/home/project_areas/project_blog">
+	<p class="postFooter">Tues, 27 Jul 2004 12:00:00 GMT ::  by M. David Peterson</p>
+	<p class="post">A transcript of Tuesday's launch activities is now available in in the <a href="/x2x2x/project_areas/project_blog">projects blog</a>.</p>  
+	</item>
+    <item type="blogTitle" value="SyncRO Soft Ltd. donates licenses for &lt;oXygenXML/&gt; to Saxon.NET development project" href="http://www.x2x2x.org/x2x2x/home/project_areas/project_blog">
+	<p class="postFooter">Tues, 13 Jul 2004 15:30:04 GMT ::  by M. David Peterson</p>
+	</item>
+  </lead_content>
+  <content/>
+</project>

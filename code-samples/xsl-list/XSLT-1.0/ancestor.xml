@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<RR>
+  <RR_row>
+    <ind_no>81723</ind_no>
+    <pos_acad_m_no>1</pos_acad_m_no>
+    <pos_acad_lib>Emeritierte(r) Professor(in)</pos_acad_lib>
+    <et25_lng>2</et25_lng>
+    <RR_group1>
+      <gr_no>330</gr_no>
+      <gr_nom>Analysis: Gruppe Kaup</gr_nom>
+      <RR_group2>
+        <type>4</type>
+      </RR_group2>
+      <RR_group2>
+        <type>3</type>
+        <type_lib>Publications</type_lib>
+        <RR_group3>
+          <cle>15381</cle>
+          <RR_group4>
+            <ordre>10</ordre>
+            <text>G. Bissig: Über die Stabilität separierbarer Blätterungen. Dissertation Fribourg, Juni 2002</text>
+            <date_debut/>
+            <date_fin/>
+            <financement/>
+            <montant>0</montant>
+          </RR_group4>
+        </RR_group3>
+      </RR_group2>
+    </RR_group1>
+  </RR_row>
+</RR>

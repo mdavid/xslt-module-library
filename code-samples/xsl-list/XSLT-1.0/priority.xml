@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sect1>
+	<para>First Paragraph</para>
+	<para>* First list item</para>
+	<para>* Second list item</para>
+	<para>* Third list item <emphasis>emphasized text</emphasis></para>
+	<para>Second Paragraph</para>
+	<para>Third paragraph</para>
+	<!-- Start new list-->
+	<para>* First list item #2</para>
+	<para>* Second list item #2</para>
+	<para>Another paragraph</para>
+</sect1>
+

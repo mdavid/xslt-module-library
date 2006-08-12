@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document title="1" chapter="1" href="file1.xml" filter="food">
+  <Article title="1.1" info="sub" filter="food"/>
+  <Article title="1.2" info="main" filter="food"/>
+</Document>
+<Document title="3" chapter="3" href="file2.xml" filter=""/>

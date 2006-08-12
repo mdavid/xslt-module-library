@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsletter>
+  <content>
+    <article>
+      <metadata>
+        <article-classification>This is some test text</article-classification>
+      </metadata>
+    </article>
+    <article>
+      <metadata>
+        <article-classification>This is some test text</article-classification>
+      </metadata>
+    </article>
+    <article>
+      <metadata>
+        <article-classification>This is some test text with the string Biz-Webcast in it</article-classification>
+      </metadata>
+    </article>
+    <article>
+      <metadata>
+        <article-classification>This is some test text</article-classification>
+      </metadata>
+    </article>
+    <article>
+      <metadata>
+        <article-classification>This is some test text with the string Biz-Webcast in it</article-classification>
+      </metadata>
+    </article>
+    <article>
+      <metadata>
+        <article-classification>This is some test text with the string Biz-Webcast in it</article-classification>
+      </metadata>
+    </article>
+  </content>
+</newsletter>

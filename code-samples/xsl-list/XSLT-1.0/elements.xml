@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<element name="Main">
+  <element name="Business">
+    <element name="Finance"/>
+  </element>
+  <element name="Computers">
+    <element name="Internet"/>
+    <element name="WWW">
+      <element name="Chat"/>
+      <element name="DNS"/>
+    </element>
+  </element>
+  <element name="Business"/>
+</element>

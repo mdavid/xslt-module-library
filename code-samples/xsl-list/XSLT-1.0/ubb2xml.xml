@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<content>
+ <ubb>
+  This is a test of UBB.
+  [b]this is test of bold[/b]
+  [i]this is a test of italic[/i]
+  [b][i]this is a test of bold italic[/i][/b]
+  [email]m.david@xxxxxxxxxx[/email]
+  [QUOTE]this is a quote[/QUOTE]
+  [url]http://www.mdptws.com[/url]
+ </ubb>
+</content>
+

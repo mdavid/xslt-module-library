@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lines>
+	<hst_list>
+		<hst index="1">1031501</hst>
+		<hst index="2">1031401</hst>
+		<hst index="3">1031301</hst>
+		<!-- followed by another 20-->
+	</hst_list>
+	<orte>
+		<ort>
+			<ort_nr>1031501</ort_nr>
+			<ort_name>HBF Gleis 1</ort_name>
+			<ort_dr_name>Hauptbahnhof, Gleis 1</ort_dr_name>
+			<ort_pos_x>4526402</ort_pos_x>
+			<ort_pos_y>5689992</ort_pos_y>
+		</ort>
+		<ort>
+			<ort_nr>1031401</ort_nr>
+			<ort_name>TOKI</ort_name>
+			<ort_dr_name>Thomaskirche</ort_dr_name>
+			<ort_pos_x>4526402</ort_pos_x>
+			<ort_pos_y>5689992</ort_pos_y>
+		</ort>
+		<!-- followed by another 3000-->
+	</orte>
+</lines>
