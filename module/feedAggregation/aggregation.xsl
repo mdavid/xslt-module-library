@@ -25,29 +25,31 @@
     <xsl:import href="./formats/ext/date.xsl"/>
 
     <xsl:variable name="default-header-data" select="document('./default-header-data.xml')/atom:feed"/>
+    <xsl:variable name="default-output-directory" select="'G:/xslt/trunk/module/feedAggregation/'"/>
 
     <xsl:strip-space elements="*"/>
 
     <xsl:output name="xml" method="xml" indent="yes"/>
 
     <xsl:template match="/">
-        <xsl:apply-templates select="subscriptions"/>
+        <xsl:apply-templates select="subscriptions|opml"/>
     </xsl:template>
 
-    <xsl:template match="subscriptions">
-        <xsl:result-document format="xml" href="file:///{concat(@saveResultBase, $default-header-data/atom:link/@href)}">
+    <xsl:template match="subscriptions|opml">
+        <xsl:variable name="base" select="if (@saveResultDocument) then @saveResultDocument else $default-output-directory"/>
+        <xsl:result-document format="xml" href="file:///{concat($base, $default-header-data/atom:link/@href)}">
             <feed 
                 xml:lang="{$default-header-data/@xml:lang}"
                 xml:base="{$default-header-data/@xml:base}"
                 >
                 <xsl:apply-templates select="$default-header-data/*"/>
-                <xsl:apply-templates select="feed"/>
+                <xsl:apply-templates select="feed|body/outline"/>
             </feed>
         </xsl:result-document>
     </xsl:template>
 
-    <xsl:template match="feed">
-        <xsl:apply-templates select="document(@uri)/*" mode="init"/>
+    <xsl:template match="feed|outline">
+        <xsl:apply-templates select="document(@uri)/*|document(@xmlUrl)" mode="init"/>
     </xsl:template>
 
     <xsl:template match="*" mode="init">
