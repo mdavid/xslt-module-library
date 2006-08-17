@@ -63,16 +63,17 @@
     </xsl:template>
     
     <xsl:template match="rss:item">
+        <xsl:param name="source"/>
         <entry>
-            <xsl:copy-of select="@*"/>
+            <xsl:copy-of select="$source"/>
             <xsl:apply-templates />
         </entry>
     </xsl:template>
     
     <xsl:template match="rss:description">
-        <summary>
+        <content>
             <xsl:value-of select="normalize-space(.)"/>
-        </summary>
+        </content>
     </xsl:template>
     
     

@@ -78,7 +78,11 @@
     </xsl:template>
     
     <xsl:template match="atom0:entry">
-        <entry><xsl:apply-templates /></entry>
+        <xsl:param name="source"/>
+        <entry>
+            <xsl:copy-of select="$source"/>
+            <xsl:apply-templates />
+        </entry>
     </xsl:template>
     
     <xsl:template match="atom0:content">

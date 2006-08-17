@@ -72,8 +72,10 @@
     </xsl:template>
     
     <xsl:template match="atom:entry">
+        <xsl:param name="source"/>
         <entry>
             <xsl:copy-of select="@*"/>
+            <xsl:copy-of select="$source"/>
             <xsl:apply-templates />
         </entry>
     </xsl:template>
