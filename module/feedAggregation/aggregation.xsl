@@ -29,14 +29,13 @@
 
     <xsl:variable name="init" select="/init:feed-transform-init" />
     <xsl:variable name="base" select="$init/@xml:base"/>
-    <xsl:variable name="default-header-data" select="document(concat($base, $init/init:default-header-data/@file))/atom:feed"/>
-    <xsl:variable name="error-document" select="concat($base, $init/init:error-document/@file)"/>
+    <xsl:variable name="default-header-data" select="document(resolve-uri($init/init:default-header-data/@file, $base))/atom:feed"/>
+    <xsl:variable name="error-document" select="resolve-uri($init/init:error-document/@file, $base)"/>
     <xsl:variable name="result-document" 
-        select="concat(
-        $base, 
+        select="resolve-uri(
         if ($default-header-data/atom:link/@href) 
         then ($default-header-data/atom:link/@href )
-        else $init/init:result-document/@file
+        else $init/init:result-document/@file, $base
         )" />
     
     
