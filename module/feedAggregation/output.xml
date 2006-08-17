@@ -3,7 +3,7 @@
       xml:base="http://xslt.googlecode.com/svn/trunk/module/feedAggregation/">
    <title>Feed Aggregation Test</title>
    <link rel="self" type="application/atom+xml" href="output.xml"/>
-   <updated>2006-8-16T21:03:41-06:00</updated>
+   <updated>2006-8-16T21:44:54-06:00</updated>
    <subtitle>Header data for test output of the various web feeds formats</subtitle>
    <id>tag:xsltransformations.com/,2006://8</id>
    <generator version="0.1" uri="http://www.xameleon.org">Xameleon</generator>
@@ -236,7 +236,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/usgs_earthquake_1.html"/>
       <published>2006-03-31T13:38:10Z</published>
-      <updated>2006-03-31T13:40:38Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1529</id>
       <summary>USGS Earthquake Hazards Program � Magnitude 6.4 - KERMADEC ISLANDS REGION There's just something about the location of this that has me concerned. It's seems prayer is in due order. Magnitude 6.4 - KERMADEC ISLANDS REGION 2006 March 31 13:21:03 UTC * Details * Maps Where can I find...? Earthquake Details Magnitude 6.4 (Strong) # Date-Time Friday, March 31, 2006...</summary>
       <content type="html" xml:lang="en" xml:base="http://www.xsltblog.com/">&lt;p&gt;&lt;a title="USGS Earthquake Hazards Program � Magnitude 6.4 - KERMADEC ISLANDS REGION" href="http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/uskyay.php"&gt;USGS Earthquake Hazards Program � Magnitude 6.4 - KERMADEC ISLANDS REGION&lt;/a&gt;&lt;/p&gt; &lt;p&gt;There's just something about the location of this that has me concerned.&lt;/p&gt; &lt;p&gt;It's seems prayer is in due order.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Magnitude 6.4 - KERMADEC ISLANDS REGION&lt;/p&gt; &lt;p&gt;2006 March 31 13:21:03 UTC&lt;/p&gt; &lt;p&gt; * Details&lt;br /&gt; * Maps&lt;/p&gt; &lt;p&gt;Where can I find...?&lt;br /&gt; Earthquake Details&lt;br /&gt; Magnitude 6.4 (Strong)&lt;br /&gt; # Date-Time Friday, March 31, 2006 at 13:21:03 (UTC)&lt;br /&gt; = Coordinated Universal Time&lt;br /&gt; # Saturday, April 1, 2006 at 1:21:03 AM&lt;br /&gt; = local time at epicenter&lt;br /&gt; Location 29.468�S, 176.755�W&lt;br /&gt; Depth 27.1 km (16.8 miles) set by location program&lt;br /&gt; Region KERMADEC ISLANDS REGION&lt;br /&gt; # Distances 110 km (69 miles) ESE (103�) from Raoul Island, Kermadec Islands&lt;br /&gt; # 937 km (582 miles) S (189�) from NUKU'ALOFA, Tonga&lt;br /&gt; # 3063 km (1903 miles) WSW (239�) from PAPEETE, Tahiti, French Polynesia&lt;br /&gt; Location Uncertainty horizontal /- 10.2 km (6.3 miles); depth fixed by location program&lt;br /&gt; Parameters Nst= 83, Nph= 83, Dmin=115.4 km, Rmss=1.11 sec, Gp= 61�,&lt;br /&gt; M-type=moment magnitude (Mw), Version=6&lt;br /&gt; # Source U.S. Geological Survey, National Earthquake Information Center&lt;br /&gt; World Data Center for Seismology, Denver&lt;br /&gt; Event ID uskyay&lt;/blockquote&gt;&lt;/p&gt;</content>
@@ -246,7 +246,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/ironpython_10_b_2.html"/>
       <published>2006-03-31T10:33:44Z</published>
-      <updated>2006-03-31T10:38:11Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1528</id>
       <summary>IronPython: News item via a recent post to the IronPython's Community Interface, Dino Viehland writs: We have just released IronPython 1.0 Beta 5. This release focuses primarily on improving IronPython’s performance. In this area we’ve reduced working set and startup type by optimizing methods on-demand, improved the speed of attribute access, reduced the overhead in many basic operations (e.g. equality...</summary>
       <category term="IronPython"/>
@@ -257,7 +257,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/the_alex_boswor_1.html"/>
       <published>2006-03-29T19:55:19Z</published>
-      <updated>2006-03-29T22:58:52Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1527</id>
       <summary>... otherwise known as, Premature Male-Pattern Baldness Alex Bosworth's Weblog: Ajax and XSLT in Web Development I especially like Google's choice to be agnostic about namespaces, as XML namespaces make me want to tear my hair out. I tell ya... I was this &gt;&amp;lt; close to taking this piece and dissecting it into billion little "Itsy-Bitsy, Teenie-Weenie, Here's A Phreakin'...</summary>
       <category term="The Adam Bosworth Effect"/>
@@ -268,7 +268,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/open_source_smi_1.html"/>
       <published>2006-03-29T03:37:33Z</published>
-      <updated>2006-03-29T03:41:03Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1526</id>
       <summary>Swish-e :: Swish-e License In addition to that legal requirement, there are some strong recommendations that aren't legally required. You should make it clear to your users that you are using Swish-e in your product by listing Swish-e in your documentation and, if you have a web site, with an easy to find link on your web site. (Consider using...</summary>
       <category term="Bowling (&amp; Beer(s)) for OSS"/>
@@ -279,7 +279,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/understanding_p_1.html"/>
       <published>2006-03-28T13:27:39Z</published>
-      <updated>2006-03-28T14:42:27Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1525</id>
       <summary>Dare Obasanjo aka Carnage4Life - Your Passion Underwhelms Me Rory says a lot of what I would have said in criticism of the passion post I found via Mini-Microsoft and does it with a lot less bitterness than I could ever muster. If you ask me, Microsoft could do with a lot less of its so-called passionate employees. I like...</summary>
       <category term="@ A Personal Level"/>
@@ -290,7 +290,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/it_takes_a_big_1.html"/>
       <published>2006-03-24T22:54:52Z</published>
-      <updated>2006-03-25T00:52:57Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1523</id>
       <summary>ongoing � WS-Fritz-Lang And when that man is Tim Bray and the person he is inferring his trust works for Microsoft... Well my friends, Tim Bray has just proven once again why I admire him as much as I do: (which I’ve never quite managed to understand, but Don Box says it’s at the center of WS-everything, and I trust...</summary>
       <category term="Microsoft and the Future of Computing"/>
@@ -301,7 +301,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/jonathon_knows_1.html"/>
       <published>2006-03-24T18:45:32Z</published>
-      <updated>2006-03-24T18:55:53Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1521</id>
       <summary>Jonathan Robie's XQuery Blog Jonathan Robie's XQuery Blog XQuery, XQJ, Data Integration, XML, Databases, and the Web. So I knew Jonathan Robie (fifth name down... yeah, in case you were unaware, Jonathan kinda knows a thing or two about XQuery ;)) had started a blog a while back. But it seems he has gone from his once in a blue...</summary>
       <content type="html" xml:lang="en" xml:base="http://www.xsltblog.com/">&lt;p&gt;&lt;a title="Jonathan Robie's XQuery Blog" href="http://blogs.datadirect.com/jonathan_robie/"&gt;Jonathan Robie's XQuery Blog&lt;/a&gt;&lt;/p&gt; &lt;blockquote&gt;Jonathan Robie's XQuery Blog XQuery, XQJ, Data Integration, XML, Databases, and the Web.&lt;/blockquote&gt; &lt;p&gt;So I knew &lt;a href="http://www.w3.org/TR/xquery/"&gt;Jonathan Robie&lt;/a&gt; (fifth name down... yeah, in case you were unaware, Jonathan kinda knows a thing or two about XQuery ;)) had started a blog a while back. But it seems he has gone from his once in a blue moon post's to once every day or two.&lt;/p&gt; &lt;p&gt;&lt;a href="http://blogs.datadirect.com/jonathan_robie/atom.xml"&gt;SUBSCRIBED&lt;/a&gt;! :)&lt;/p&gt;</content>
@@ -311,7 +311,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/complex_systems_1.html"/>
       <published>2006-03-24T17:56:39Z</published>
-      <updated>2006-03-24T18:33:30Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1520</id>
       <summary>No one ever got fired for... ✏Copia So no one gets fired for Google-like systems architecture. No. Outside the crescendoing Web 2.0 bubble, no one gets hired in the first place if there's the slightest sniff they'd contemplate such a thing. Shame. Web 2.0 is not a bubble (square-one-dot-com) because it's based on near-trivial technology. It's a bubble because there...</summary>
       <category term="Atom"/>
@@ -322,7 +322,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/little_digs.html"/>
       <published>2006-03-24T17:38:24Z</published>
-      <updated>2006-03-24T17:42:23Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1519</id>
       <summary>ongoing � Atomic Google Hacks Line 6: This is a Google-Reader-specific extension of some sort, and I have no idea what it means, and that’s just fine. Atom requires that software tolerate this kind of thing, which is why we’ll probably never need Atom 2.0 or even 1.0.0.0.1. You'd have to be somewhat of a fanatical follower of the RSS...</summary>
       <category term="Atom"/>
@@ -333,7 +333,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/the_day_we_all.html"/>
       <published>2006-03-22T15:48:47Z</published>
-      <updated>2006-03-22T16:25:54Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1518</id>
       <summary>Sean McGrath, CTO, Propylon ...and we lost. We lost the battle, our desire to change, adapt, create, and be free from ANYTHING that might suggest we live within the confines of someone elses standards. Folks will increasingly stop creating new XML-based languages at the front-end. Instead, the XML-based semantics will be tunnelled into a small set of existing vocabularies, most...</summary>
       <category term="Creativity"/>
@@ -344,7 +344,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/acid_2_taketwo.html"/>
       <published>2006-03-21T19:23:57Z</published>
-      <updated>2006-03-21T20:44:27Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1517</id>
       <summary>Since I'm one of the few hackers left that actually uses Windows on a regular basis, much less Internet Explorer, I guess by default I'd best do my duty and provide a quick update to my previous Acid 2 comparison test. Oh wait... firstly, I guess I should preface this with the fact that there is another preview version of...</summary>
       <category term="Internet Explorer 7.0"/>
@@ -355,7 +355,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/your_100_right_1.html"/>
       <published>2006-03-21T07:02:06Z</published>
-      <updated>2006-03-21T08:10:20Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1516</id>
       <summary>[UPDATE: Please see my extended follow-up piece on my O'Reilly blog] Dare Obasanjo aka Carnage4Life - Instant Messaging Networks vs. Public Social Networks Of course, nothing stops the recruiter from just blogging about our relationship or creating a blogroll of "people I'm trying to poach from Microsoft" but that's just her word against mine. With publicly exposing her social network,...</summary>
       <category term="Social Networks"/>
@@ -366,7 +366,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/on_loved_ones_l.html"/>
       <published>2006-03-20T11:03:58Z</published>
-      <updated>2006-03-20T11:26:58Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1515</id>
       <summary>I just finished speaking with my Mother who had just gotten off the phone with her brother Paul. Paul, and the rest of my Aunts and Uncles (my Father was an only child) live in Australia, mostly in the Perth, Western Australia area. As such I've never really had a chance to get to know most of them, including my...</summary>
       <category term="In Remembrance..."/>
@@ -377,7 +377,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/andrew_welch_en_1.html"/>
       <published>2006-03-20T10:11:38Z</published>
-      <updated>2006-03-20T10:16:26Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1514</id>
       <summary>ajwelch The Sudoku solving stylesheet craze has been catching on... Dimitre Novatchev, creator of FXSL and xsl-list regular, has written a stylesheet (in typical Dimitre style) which attacks the problem from a slightly different angle. It seems while I wasn't paying attention, Andrew Welch up'd and started a blog. Welcome Andrew! Subscribed. Regarding Andrew's post.... I have some more to...</summary>
       <category term="Bloggers To Pay Attention To"/>
@@ -388,7 +388,7 @@
       <link rel="alternate" type="text/html"
             href="http://www.xsltblog.com/archives/2006/03/a_windows_life.html"/>
       <published>2006-03-19T11:01:13Z</published>
-      <updated>2006-03-19T11:05:31Z</updated>
+      <updated/>
       <id>tag:www.xsltblog.com,2006://1.1511</id>
       <summary>I just have to give a quick shout out to the Cygwin folks... In all honesty, I can't imagine life without the absolutely fundimental *MUST HAVE* utility for anybody who lives in a cross-breed OS world....</summary>
       <category term="WiNiX"/>

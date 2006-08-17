@@ -17,7 +17,7 @@
     <xsl:import href="./formats/ext/cc.xsl"/>
     <xsl:import href="./formats/ext/admin.xsl"/>
 
-    <xsl:variable name="default-header-data" select="document('./default-header-data.xml')/feed"/>
+    <xsl:variable name="default-header-data" select="document('./default-header-data.xml')/atom:feed"/>
 
     <xsl:strip-space elements="*"/>
 
@@ -28,31 +28,10 @@
     </xsl:template>
 
     <xsl:template match="subscriptions">
-        <xsl:result-document format="xml" href="file:///{concat(@saveResultBase, $default-header-data/link/@href)}">
+        <xsl:result-document format="xml" href="file:///{concat(@saveResultBase, $default-header-data/atom:link/@href)}">
             <feed xml:lang="en"
                 xml:base="{$default-header-data/@xml:base}">
-                <title>
-                    <xsl:value-of select="$default-header-data/title"/>
-                </title>
-                <link>
-                    <xsl:copy-of select="$default-header-data/link/@*"/>
-                </link>
-                <updated>
-                    <xsl:apply-templates select="$default-header-data/updated/date:output"/>
-                </updated>
-                <subtitle>
-                    <xsl:value-of select="$default-header-data/subtitle"/>
-                </subtitle>
-                <id>
-                    <xsl:value-of select="$default-header-data/id"/>
-                </id>
-                <generator>
-                    <xsl:copy-of select="$default-header-data/generator/@*"/>
-                    <xsl:value-of select="$default-header-data/generator"/>
-                </generator>
-                <rights>
-                    <xsl:value-of select="$default-header-data/rights"/>
-                </rights>
+                <xsl:apply-templates select="$default-header-data/*"/>
                 <xsl:apply-templates select="feed"/>
             </feed>
         </xsl:result-document>

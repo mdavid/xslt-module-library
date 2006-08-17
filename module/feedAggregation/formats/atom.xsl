@@ -27,7 +27,9 @@
     </xsl:template>
     
     <xsl:template match="atom:updated">
-        <updated><xsl:value-of select="."/></updated>
+        <updated>
+            <xsl:apply-templates select="*"/>
+        </updated>
     </xsl:template>
     
     <xsl:template match="atom:published">
@@ -81,5 +83,9 @@
             <xsl:copy-of select="@*"/>
             <xsl:value-of select="normalize-space(.)"/>
         </content>
+    </xsl:template>
+    
+    <xsl:template match="text()">
+        <xsl:value-of select="."/>
     </xsl:template>
 </xsl:stylesheet>
