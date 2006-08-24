@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter xmlns="http://xsltransformations.com/webfeed/filter" xml:base="file:///G:/xslt/trunk/data/" src="changes.xml" output-file="filtered-data.xml">
+    <key value="spaces.live.com" />
+    <key value="typepad.com" />
+    <key value="blogspot.com" />
+    <key value="wordpress.com" />
+</filter>
