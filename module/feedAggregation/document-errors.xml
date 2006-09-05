@@ -1,18 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document-errors xmlns="http://xsltransformations.com/webfeeds/document-errors">
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.zeldman.com/feed/zeldman.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.kuro5hin.org/backend.rdf</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://partners.userland.com/people/docSearls.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://weblog.siliconvalley.com/column/dangillmor/index.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://diveintomark.org/xml/rss.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.gotdotnet.com/team/dbox/rss.aspx</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://static.userland.com/tomalak/links2.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.bloglines.com/rss/about/news</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://diveintomark.org/xml/atom.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.intertwingly.net/blog/index.rss</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.russellbeattie.com/notebook/rss.jsp</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.lockergnome.com/lockergnome.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.macintouch.com/rss.xml</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.dashes.com/links/index.rdf</file-error>
-   <file-error xmlns="http://www.w3.org/2005/Atom">http://www.25hoursaday.com/weblog/SyndicationService.asmx/GetRss</file-error>
-</document-errors>
+<document-errors xmlns="http://xsltransformations.com/webfeeds/document-errors"/>

@@ -3,6 +3,6 @@
     <default-header-data file="default-header-data.xml" />
     <result-document file="output.xml"/>
     <error-document file="document-errors.xml"/>
-    <file uri="top100.opml" />
+    <!--<file uri="top100.opml" />-->
     <file uri="feeds.opml" />
 </feed-transform-init>

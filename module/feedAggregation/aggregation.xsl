@@ -42,6 +42,9 @@
     <xsl:strip-space elements="*"/>
 
     <xsl:output name="xml" method="xml" indent="yes"/>
+    <xsl:output name="html" method="html" include-content-type="no" cdata-section-elements="content"/>
+    <xsl:output name="xhtml" method="xhtml" indent="yes"/>
+    <xsl:output name="text" method="text"/>
 
     <xsl:template match="/">
         <xsl:apply-templates select="init:feed-transform-init"/>
