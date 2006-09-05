@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<feed-transform-init xmlns="http://xsltransformations.com/webfeeds/feed-transform-init" xml:base="file:///G:/xslt/trunk/module/feedAggregation/">
-    <default-header-data file="default-header-data.xml" />
-    <result-document file="output.xml"/>
-    <error-document file="document-errors.xml"/>
-    <!--<file uri="top100.opml" />-->
-    <file uri="feeds.opml" />
-</feed-transform-init>
