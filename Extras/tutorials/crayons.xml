@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<crayons>
+  <crayon color="blue" brand="crayola"/>
+  <crayon color="yellow" brand="generic"/>
+  <crayon color="violet" brand="generic"/>
+  <crayon color="violet" brand="crayola"/>
+  <crayon color="fuscia" brand="crayola"/>
+  <crayon color="red" brand="generic"/>
+  <crayon color="red" brand="crayola"/>
+  <crayon color="blue" brand="generic"/>
+  <crayon color="green" brand="generic"/>
+  <crayon color="green" brand="crayola"/>
+  <crayon color="yellow" brand="crayola"/>
+  <crayon color="orange" brand="generic"/>
+  <crayon color="orange" brand="crayola"/>
+  <crayon color="fuscia" brand="generic"/>
+</crayons>

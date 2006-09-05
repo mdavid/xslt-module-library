@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<main_Customer_data_file>
+  <create_new_student_process>
+    <studentSchema>
+      <student type="element" format="root">
+        <fullName type="attribute" format="string"/>
+        <id type="attribute" format="string"/>
+        <LastName type="element" format="string"/>
+        <FirstName type="element" format="string"/>
+        <PhoneNumber type="element" format="string"/>
+        <classes type="element" format="root">
+          <id type="attribute" format="string"/>
+          <class type="element" format="root">
+            <ClassDate type="attribute" format="date"/>
+            <Attendance type="element" format="root">
+              <am type="attribute" format="string"/>
+              <am type="attribute" format="string"/>
+            </Attendance>
+          </class>
+        </classes>
+      </student>
+    </studentSchema>
+    <student_id_generator>
+      <translate>
+        <from sequence="abdcefghijklmnopqrstuvwxyz0123456789"/>
+        <to sequence="bdcefghijklmnopqrstuvwxyza1234567890"/>
+      </translate>
+      <current_translated_values>
+        <alpha value="aifbnm"/>
+        <numeric value="11327"/>
+      </current_translated_values>
+      <current_incremented_values>
+        <alpha value="b"/>
+        <numeric value="1010"/>
+      </current_incremented_values>
+      <current_constants>
+        <alpha value="SEA"/>
+        <numeric value="657"/>
+      </current_constants>
+    </student_id_generator>
+  </create_new_student_process>
+</main_Customer_data_file>

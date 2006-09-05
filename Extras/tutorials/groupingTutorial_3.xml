@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<run>
+  <http_load title="X">
+    <url>http://delenn-g:8080/lps/sample-apps/calendar/calendar.lzo?
+lzt=swf</url>
+    <rr>delenn-g</rr>
+    <fetches>94851</fetches>
+  </http_load>
+    <http_load title="Y">
+    <url>http://delenn-g:8080/lps/sample-apps/calendar/calendar.lzo?
+lzt=swf</url>
+    <rr>delenn-g</rr>
+    <fetches>94851</fetches>
+  </http_load>
+  <httpload gzip="true"
+      title="X"
+      seconds="180"/>
+  <fetch-curl title="X">
+    <url>http://delenn-g:8080/lps/sample-apps/calendar/calendar.lzo?
+lzt=swf</url>
+    <status>HTTP/1.1 404 Not Found</status>
+  </fetch-curl>
+
+  <httpload gzip="true"
+      title="Y"
+      seconds="180"/>
+  <fetch-curl title="Y">
+    <url>http://delenn-g:8080/lps/sample-apps/calendar/calendar.lzo?
+lzt=swf</url>
+    <status>HTTP/1.1 404 Not Found</status>
+  </fetch-curl>
+</run>
+

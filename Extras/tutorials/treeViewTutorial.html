@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tree View Sample</title>
+    <script language="javascript">
+          function changeVis(id){
+            nodesDeep = 18;
+            display = document.getElementById(id).innerText;
+            if(display == "+"){
+              document.getElementById(id).innerText = "-";
+              for(i=id; i<=nodesDeep; i++){
+                 alert(id);
+                 eval("document.classes. + id + .div.display") = "inline";
+              }
+            }
+            else{
+              document.getElementById(id).innerText = "+";
+              for(i=id; i<=nodesDeep; i++){
+                alert(id);
+                eval("document.classes. + id + .div.display") = "none";
+              }
+            }
+          }    
+        </script>
+    <style type="text/css">
+      <!--
+    div.1{
+      display:inline; 
+      position:relative; 
+      float:left; 
+      clear:both; 
+      margin:0px 0px 0px 10px
+    }
+  
+    div.2{
+      display:inline; 
+      position:relative; 
+      float:left; 
+      clear:both; 
+      margin:0px 0px 0px 10px
+    }
+  
+    div.2{
+      display:inline; 
+      position:relative; 
+      float:left; 
+      clear:both; 
+      margin:0px 0px 0px 10px
+    }
+  
+    div.3{
+      display:inline; 
+      position:relative; 
+      float:left; 
+      clear:both; 
+      margin:0px 0px 0px 10px
+    }
+  
+    div.4{
+      display:inline; 
+      position:relative; 
+      float:left; 
+      clear:both; 
+      margin:0px 0px 0px 10px
+    }
+  
+    div.5{
+      display:inline; 
+      position:relative; 
+      float:left; 
+      clear:both; 
+      margin:0px 0px 0px 10px
+    }
+  
+    div.6{
+      display:inline; 
+      position:relative; 
+      float:left; 
+      clear:both; 
+      margin:0px 0px 0px 10px
+    }
+  -->
+    </style>
+  </head>
+  <body>
+    <div style="position:absolute top:0px left:0px">
+      <div style="position:relative; float:left; clear:both; margin:0px 0px 0px 0px">
+        <div class="0">
+          <font color="red"><a onclick="changeVis('0');" href="#"><label id="0">+</label></a>top<a href="+"><font size="-2">+</font></a>
+    
+            <div class="1">
+              <font color="red"><a onclick="changeVis('1');" href="#"><label id="1">+</label></a>child<a href="+"><font size="-2">+</font></a>
+      
+                <div class="2">
+                  <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                </div>
+      
+                <div class="2">
+                  <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                </div>
+      
+                <div class="2">
+                  <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                </div>
+    
+              </font>
+            </div>
+    
+            <div class="1">
+              <font color="red"><a onclick="changeVis('1');" href="#"><label id="1">+</label></a>child<a href="+"><font size="-2">+</font></a>
+      
+                <div class="2">
+                  <font color="red"><a onclick="changeVis('2');" href="#"><label id="2">+</label></a>child<a href="+"><font size="-2">+</font></a>
+        
+                    <div class="3">
+                      <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                    </div>
+        
+                    <div class="3">
+                      <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                    </div>
+        
+                    <div class="3">
+                      <font color="red"><a onclick="changeVis('3');" href="#"><label id="3">+</label></a>child<a href="+"><font size="-2">+</font></a>
+          
+                        <div class="4">
+                          <font color="red"><a onclick="changeVis('4');" href="#"><label id="4">+</label></a>child<a href="+"><font size="-2">+</font></a>
+            
+                            <div class="5">
+                              <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                            </div>
+            
+                            <div class="5">
+                              <font color="red"><a onclick="changeVis('5');" href="#"><label id="5">+</label></a>child<a href="+"><font size="-2">+</font></a>
+              
+                                <div class="6">
+                                  <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                                </div>
+              
+                                <div class="6">
+                                  <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                                </div>
+            
+                              </font>
+                            </div>
+          
+                          </font>
+                        </div>
+          
+                        <div class="4">
+                          <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                        </div>
+        
+                      </font>
+                    </div>
+      
+                  </font>
+                </div>
+      
+                <div class="2">
+                  <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                </div>
+      
+                <div class="2">
+                  <font color="red">child<a href="+"><font size="-2">+</font></a></font>
+                </div>
+    
+              </font>
+            </div>
+  
+          </font>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
