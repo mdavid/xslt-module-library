@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscriptions saveResultBase="G:/xslt/trunk/module/feedAggregation/">
+	<feed uri="http://www.xsltblog.com/atom-0.3.xml"/>
+	<feed uri="http://www.xsltblog.com/feed.atom"/>
+	<feed uri="http://www.xsltblog.com/index.xml"/>
+	<feed uri="http://www.xsltblog.com/index.rdf"/>
+</subscriptions>
