@@ -30,8 +30,8 @@
     <xsl:template match="planet:*[@output-type = 'section']">
         <xsl:variable name="TODO">
             <xsl:text>#TODO: Create proper output syntax for children of DEFAULT element.  For now we won't do anything.</xsl:text>
-        </xsl:variable>     
-        <xsl:value-of select="concat('[', local-name(), ']', $lb, $TODO, $lb)" />   
+        </xsl:variable>
+        <xsl:value-of select="concat('[', local-name(), ']', $lb, $TODO, $lb)" />
     </xsl:template>
 
     <xsl:template match="planet:*">
@@ -61,14 +61,17 @@
     </xsl:template>
 
     <xsl:template match="foaf:member">
-        <xsl:text>[</xsl:text>
         <xsl:value-of
-            select="foaf:Agent[1]/foaf:weblog[1]/foaf:Document[1]/rdfs:seeAlso[1]/rss:channel[1]/@rdf:about" />
-        <xsl:text>]</xsl:text>
-        <xsl:value-of select="$lb" />
-        <xsl:text>name = </xsl:text>
-        <xsl:value-of select="foaf:Agent/foaf:name" />
-        <xsl:value-of select="$lb" />
+            select="concat(
+                '[', 
+                foaf:Agent[1]/foaf:weblog[1]/foaf:Document[1]/rdfs:seeAlso[1]/rss:channel[1]/@rdf:about, 
+                ']', 
+                $lb, 
+                'name = ', 
+                foaf:Agent/foaf:name, 
+                $lb
+            )"
+         />
     </xsl:template>
 
 </xsl:stylesheet>
