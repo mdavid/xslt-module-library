@@ -16,7 +16,6 @@
     <xsl:template match="/">
         <xsl:result-document method="text"
             href="{resolve-uri(planet:planet/@output-file, planet:planet/@xml:base)}">
-            <xsl:value-of select="concat('[Planet]', $lb)" />
             <xsl:apply-templates select="planet:planet/*" />
         </xsl:result-document>
     </xsl:template>
@@ -31,7 +30,7 @@
         <xsl:variable name="TODO">
             <xsl:apply-templates select="planet:TODO" />
         </xsl:variable>
-        <xsl:value-of select="concat('[', local-name(), ']', $lb, $TODO, $lb)" />
+        <xsl:value-of select="concat('[', local-name(), ']', $lb, $TODO)" />
     </xsl:template>
 
     <xsl:template match="planet:TODO">
