@@ -24,7 +24,7 @@
     <bill_of_materials>
         <!--<face/>-->
     </bill_of_materials>
-    <DEFAULT>
+    <DEFAULT output-type="section">
         <!--
             # Options placed in the [DEFAULT] section provide defaults for the feed
             # sections.  Placing a default here means you only need to override the

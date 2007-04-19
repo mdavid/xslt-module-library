@@ -27,11 +27,18 @@
         </xsl:apply-templates>
     </xsl:template>
 
+    <xsl:template match="planet:*[@output-type = 'section']">
+        <xsl:variable name="TODO">
+            <xsl:text>#TODO: Create proper output syntax for children of DEFAULT element.  For now we won't do anything.</xsl:text>
+        </xsl:variable>     
+        <xsl:value-of select="concat('[', local-name(), ']', $lb, $TODO, $lb)" />   
+    </xsl:template>
+
     <xsl:template match="planet:*">
         <xsl:variable name="output-name">
             <xsl:if test="not(*) and text()">
                 <xsl:value-of select="local-name()" />
-                <xsl:apply-templates select="text()" mode="append-value"/>
+                <xsl:apply-templates select="text()" mode="append-value" />
             </xsl:if>
             <xsl:apply-templates select="*" mode="append-child">
                 <xsl:with-param name="parent" select="local-name()" />
@@ -44,7 +51,7 @@
         <xsl:param name="parent" />
         <xsl:value-of select="concat($parent, '_', local-name())" />
         <xsl:if test="last()">
-            <xsl:apply-templates select="text()" mode="append-value"/>
+            <xsl:apply-templates select="text()" mode="append-value" />
         </xsl:if>
     </xsl:template>
 
