@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planet xml:base="/srv/planet/xsltransformations.com" output="planet-xsltransformations.ini">
+    <style theme-name="musings" />
+    <source-files>
+        <foaf
+            src="http://xslt.googlecode.com/svn/trunk/Modules/WebFeed/FOAF-to-Planet.ini/planet.xsltransformations.com.foaf"
+         />
+    </source-files>
+</planet>
