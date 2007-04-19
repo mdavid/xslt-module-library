@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<planet xml:base="/srv/planet/xsltransformations.com" output="planet-xsltransformations.ini">
-    <style theme-name="musings" />
+<planet xmlns="http://xslt.googlecode.com/svn/trunk/Modules/WebFeed/FOAF-to-Planet.ini/"
+    xml:base="file:///Users/mdavid/Sites/" output-file="planet-xsltransformations.ini">
+
+    <name>Planet XSLTransformations</name>
+    <owner>
+        <name>M. David Peterson</name>
+        <email>m.david@xmlhacker.com</email>
+    </owner>
+    <output>
+        <theme>musings</theme>
+        <dir>/mnt/srv/planet.xsltransformations.com</dir>
+    </output>
+    <cache>
+        <dir>/mnt/srv/planet.xsltransformations.com/cache</dir>
+    </cache>
+    <log>
+        <level>DEBUG</level>
+    </log>
+    <feed>
+        <timeout>20</timeout>
+    </feed>
+    <items_per_page>60</items_per_page>
+    <bill_of_materials>
+        <!--<face/>-->
+    </bill_of_materials>
+    <DEFAULT>
+        <!--
+            # Options placed in the [DEFAULT] section provide defaults for the feed
+            # sections.  Placing a default here means you only need to override the
+            # special cases later.
+          -->
+    </DEFAULT>
     <source-files>
         <foaf
             src="http://xslt.googlecode.com/svn/trunk/Modules/WebFeed/FOAF-to-Planet.ini/planet.xsltransformations.com.foaf"
