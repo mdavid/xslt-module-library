@@ -59,8 +59,7 @@
     </xsl:template>
 
     <xsl:template match="text()" mode="append-value">
-        <xsl:text> = </xsl:text>
-        <xsl:value-of select="concat(., $lb)" />
+        <xsl:value-of select="concat(' = ', ., $lb)" />
     </xsl:template>
 
     <xsl:template match="foaf:member">
