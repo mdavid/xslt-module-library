@@ -10,7 +10,9 @@
         <xsl:text>           
 </xsl:text>
     </xsl:variable>
+    
     <xsl:output name="text" method="text" />
+    
     <xsl:strip-space elements="*" />
 
     <xsl:template match="/">
