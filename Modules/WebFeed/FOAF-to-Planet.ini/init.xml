@@ -29,7 +29,8 @@
             # Options placed in the [DEFAULT] section provide defaults for the feed
             # sections.  Placing a default here means you only need to override the
             # special cases later.
-          -->
+        -->
+        <TODO>Create proper output syntax for children of DEFAULT element.  For now we won't do anything.</TODO>
     </DEFAULT>
     <source-files>
         <foaf

@@ -29,9 +29,13 @@
 
     <xsl:template match="planet:*[@output-type = 'section']">
         <xsl:variable name="TODO">
-            <xsl:text>#TODO: Create proper output syntax for children of DEFAULT element.  For now we won't do anything.</xsl:text>
+            <xsl:apply-templates select="planet:TODO" />
         </xsl:variable>
         <xsl:value-of select="concat('[', local-name(), ']', $lb, $TODO, $lb)" />
+    </xsl:template>
+
+    <xsl:template match="planet:TODO">
+        <xsl:value-of select="concat('#TODO: ', ., $lb)" />
     </xsl:template>
 
     <xsl:template match="planet:*">
