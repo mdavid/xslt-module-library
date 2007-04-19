@@ -1,0 +1,639 @@
+﻿<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rss="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <foaf:Group>
+        <foaf:name>M. David Peterson</foaf:name>
+        <foaf:homepage />
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Dimitre Novatchev</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://dnovatchev.spaces.live.com/">
+                        <dc:title>XSLT: Riding the challenge</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://dnovatchev.spaces.live.com/feed.rss" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>David Carlisle</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://dpcarlisle.blogspot.com/">
+                        <dc:title></dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://dpcarlisle.blogspot.com/feeds/posts/default" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Andrew Welch</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://ajwelch.blogspot.com/index.html">
+                        <dc:title>Thoughts on XSLT</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://ajwelch.blogspot.com/feeds/posts/default"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Eric Larson</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://ionrock.org/blog/">
+                        <dc:title>The IonBlog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://ionrock.org/blog/index.atom" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Henry Story</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://blogs.sun.com/bblfish/">
+                        <dc:title>The Sun BabelFish Blog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://blogs.sun.com/bblfish/feed/entries/atom"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Keith Fahlgren</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://kfahlgren.com/blog">
+                        <dc:title>Keith's Blog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://kfahlgren.com/blog/feed/atom/" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Bob DuCharme</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.snee.com/bobdc.blog/">
+                        <dc:title>bobdc.blog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.snee.com/bobdc.blog/bobdcblog.rdf" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Dr. Michael Kay</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://saxonica.blogharbor.com/blog">
+                        <dc:title>Saxon diaries</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://saxonica.blogharbor.com/blog/index.xml"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Derek Denny-Brown</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://nothing-more.blogspot.com/index.html">
+                        <dc:title>only this, and nothing more</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://nothing-more.blogspot.com/feeds/posts/default" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Kurt Cagle</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.understandingxml.com/">
+                        <dc:title>UnderstandingXML</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.understandingxml.com/index.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>UnderstandingXSLT</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.understandingxslt.com/">
+                        <dc:title>UnderstandingXSLT</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.understandingxslt.com/atom.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Don Box</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://pluralsight.com/blogs/dbox/">
+                        <dc:title>Don Box's Spoutlet</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://pluralsight.com/blogs/dbox/Rss.aspx" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>M. David Peterson</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.xsltblog.com/">
+                        <dc:title>XSLT:Blog[@author = 'M. David Peterson']/Main</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.xsltblog.com/feed.atom" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Evan Lenz</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://evanlenz.net/blog">
+                        <dc:title>Evan Lenz</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://evanlenz.net/blog/feed/" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Dave Pawson</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="">
+                        <dc:title>Dave Pawson's Blog. nodeSets</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.dpawson.co.uk/nodesets/atom.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Uche &amp; Chime Ogbuji</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://copia.ogbuji.net/blog/">
+                        <dc:title>Copia</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://copia.ogbuji.net/blog/index.atom" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Norm Walsh</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://norman.walsh.name/">
+                        <dc:title>norman.walsh.name</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://norman.walsh.name/index.rss" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Jonathan Bruce</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://jonathanbruceconnects.com/jonathan_bruce/">
+                        <dc:title>Jonathan Bruce's WebLog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://www.jonathanbruceconnects.com/jonathan_bruce/index.xml"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>John L. Clark</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="">
+                        <dc:title>Collected Infinitesque News</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://infinitesque.net/all.atom" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Peter Fisk</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://vistasmalltalk.wordpress.com">
+                        <dc:title>21st Century Smalltalk</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://vistasmalltalk.wordpress.com/feed/" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Jonathan Robie</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://blogs.datadirect.com/jonathan_robie/atom.xml">
+                        <dc:title />
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Colin Paul Adams</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.eiffelroom.com/blog/colin_adams">
+                        <dc:title>colin-adams's blog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.eiffelroom.com/blog/colin_adams/feed"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Elliotte Rusty Harold</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.cafeconleche.org/">
+                        <dc:title>Cafe con Leche XML News and Resources</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.ibiblio.org/xml/today.rss" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Oleg Parashchenko</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://uucode.com/blog">
+                        <dc:title>olpa, OSS developer</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://uucode.com/blog/feed/" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Danny Ayers</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://dannyayers.com/">
+                        <dc:title>Raw</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://dannyayers.com/.rss?replaceLang=en" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Chris Wallace</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://thewallaceline.blogspot.com/index.html">
+                        <dc:title>The Wallace Line</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://thewallaceline.blogspot.com/feeds/posts/default"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Oleg Tkachenko</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.tkachenko.com/blog/">
+                        <dc:title>Signs on the Sand</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.tkachenko.com/blog/feed.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Dare Obasanjo</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.25hoursaday.com/weblog/">
+                        <dc:title>Dare Obasanjo aka Carnage4Life</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://www.25hoursaday.com/weblog/SyndicationService.asmx/GetRss"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Michael Smith</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.oreillynet.com/pub/au/890">
+                        <dc:title>Michael(tm) Smith, O'Reilly Network</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://www.oreillynet.com/feeds/author/?x-au=890" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Chris Sells</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.sellsbrothers.com/">
+                        <dc:title>Marquee de Sells: Chris's insight outlet</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.sellsbrothers.com/news/rss2.aspx" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Lars Trieloff</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://weblogs.goshaky.com/weblogs/lars/">
+                        <dc:title>Lars Trieloff's Weblog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://feeds.feedburner.com/LarsTrieloff" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Anton Lapounov</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://blogs.msdn.com/antosha/default.aspx">
+                        <dc:title>Anton Lapounov: XML XSLT and Beyond</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://blogs.msdn.com/antosha/atom.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>James Clark</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://blog.jclark.com/index.html">
+                        <dc:title>James Clark's Random Thoughts</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://blog.jclark.com/feeds/posts/default" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>DonXML</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://donxml.com/allthingstechie/default.aspx">
+                        <dc:title>DonXml's All Things Techie</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://donxml.com/allthingstechie/rss.aspx" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Piers Hollott</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://piershollott.blogspot.com/index.html">
+                        <dc:title>eardrum buzz</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://piershollott.blogspot.com/feeds/posts/default" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Aristotle Pagaltzis</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://plasmasturm.org/">
+                        <dc:title>plasmasturm.org</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://plasmasturm.org/feeds/plasmasturm/" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Jim Fuller</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://jimfuller.blogspot.com/index.html">
+                        <dc:title>Ruminations on xml,xslt and code</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://jimfuller.blogspot.com/feeds/posts/default" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Rick Jelliffe</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.oreillynet.com/pub/au/1712">
+                        <dc:title>Rick Jelliffe, O'Reilly Network</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://www.oreillynet.com/feeds/author/?x-au=1712" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Mike Champion</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://blogs.msdn.com/mikechampion/default.aspx">
+                        <dc:title>mikechampion's weblog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://blogs.msdn.com/mikechampion/atom.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Microsoft XML Team</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://blogs.msdn.com/xmlteam/default.aspx">
+                        <dc:title>Microsoft XML Team's WebLog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://blogs.msdn.com/xmlteam/atom.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Eric van der Vlist</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://eric.van-der-vlist.com/blog">
+                        <dc:title>Eric van der Vlist</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://eric.van-der-vlist.com/blog/item%5Bcategory=%22XML%22%20and%20category=%22English%22%5D?t=rss10"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Kevin Farnham</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.oreillynet.com/">
+                        <dc:title>O'Reilly Network Articles and Weblogs: Kevin Farnham</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.oreillynet.com/pub/feed/31" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Don Syme</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://blogs.msdn.com/dsyme/default.aspx">
+                        <dc:title>Don Syme's WebLog on F# and Other Research Projects</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://blogs.msdn.com/dsyme/atom.xml" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Bruce D'Arcus</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://netapps.muohio.edu/blogs/darcusb/darcusb">
+                        <dc:title>darcusblog</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel
+                                rdf:about="http://netapps.muohio.edu/blogs/darcusb/darcusb/feed/rdf/"
+                             />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Atsushi Eno</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://monkey.workarea.jp/lb/index.html">
+                        <dc:title>monogatari</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://monkey.workarea.jp/lb/index.rss2" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Michael Day</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="">
+                        <dc:title />
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+        <foaf:member>
+            <foaf:Agent>
+                <foaf:name>Todd Ditchendorf</foaf:name>
+                <foaf:weblog>
+                    <foaf:Document rdf:about="http://www.ditchnet.org/wp">
+                        <dc:title>Todd Ditchendorf's Blog. XML, Cocoa, JavaScript, Java.</dc:title>
+                        <rdfs:seeAlso>
+                            <rss:channel rdf:about="http://www.ditchnet.org/wp/feed/" />
+                        </rdfs:seeAlso>
+                    </foaf:Document>
+                </foaf:weblog>
+            </foaf:Agent>
+        </foaf:member>
+    </foaf:Group>
+</rdf:RDF>
