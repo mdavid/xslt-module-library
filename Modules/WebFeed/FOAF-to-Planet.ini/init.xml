@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <planet xmlns="http://xslt.googlecode.com/svn/trunk/Modules/WebFeed/FOAF-to-Planet.ini/"
     xml:base="file:///Users/mdavid/Sites/" output-file="planet-xsltransformations.ini">
-    
-    <Planet output-type="section"/>
+
+    <Planet output-type="section" />
     <name>Planet XSLTransformations</name>
     <owner>
         <name>M. David Peterson</name>

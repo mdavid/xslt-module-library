@@ -10,9 +10,9 @@
         <xsl:text>           
 </xsl:text>
     </xsl:variable>
-    
+
     <xsl:output name="text" method="text" />
-    
+
     <xsl:strip-space elements="*" />
 
     <xsl:template match="/">
@@ -55,7 +55,8 @@
     <xsl:template match="planet:*" mode="append-child">
         <xsl:param name="parent" />
         <xsl:value-of select="concat($parent, '_', local-name())" />
-        <xsl:if test="last()">
+        <xsl:apply-templates select="*" mode="append-child"/>
+        <xsl:if test="not(*) and text()">
             <xsl:apply-templates select="text()" mode="append-value" />
         </xsl:if>
     </xsl:template>
