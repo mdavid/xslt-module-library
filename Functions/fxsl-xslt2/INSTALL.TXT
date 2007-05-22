@@ -1,0 +1,120 @@
+Installing FXSL for XSLT2.0
+===========================
+
+The good news is that if you are reading this, then you don't HAVE to do anything 
+else - you will be able to run the test programs, and programs you write on your
+local machine, perfectly well.
+
+However, there are situations that require one more step, and that step is to make 
+the XML catalog file included with FXSL (catalog.xml) known to your system.
+
+As for how you do this, I will explain below. But first I will explain why this
+step can be necessary, and what benefits you get from it.
+
+FXSL includes, as its primary offering to you, the XSLT 2.0 programmer, a set
+of stylesheet modules included in the f directory. For instance, func-foldl.xsl,
+which provides the function f:foldl(), and func-Operators.xsl, which provides
+HOF (Higher Order Functions) wrappers for the XPath built-in operators, such as 
+f:add(), which wraps the + operator.
+
+To use these, you must include or import them into your own transformation:
+
+This is how the test programs do it:
+
+<xsl:transform version="2.0"
+ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+>
+   <xsl:import href="../f/func-foldl.xsl"/>
+
+.
+.
+.
+
+</xsl:transform>
+
+This works because the test programs know where they are positioned relative
+to the stylesheet modules they wish to import.
+
+You can do the same, of course, but if you do so, this decreases the portability
+of your transformations, as if you move them to another machine, you may not be
+able to install them in the correct location.
+
+For instance, suppose on my machine, that fxsl was installed in /opt/fxsl-xslt2 (I
+use Linux). This is a directory that only a system adminstrator can edit. If I am
+an ordinary user on this machine, then I would not be able to install the transformation
+you sent me into /opt.
+
+OK - I could install it in /home/colin, and edit the transformation so that it read:
+
+ <xsl:transform version="2.0"
+ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+>
+   <xsl:import href="/opt/fxsl-xslt2/f/func-foldl.xsl"/>
+
+.
+.
+.
+
+</xsl:transform>
+
+and it would work again.
+
+Not a big problem. or is it? If you send me 100 transformations, then it will be a bit
+laborious. I would probably resort to writing an editing script to do it.
+
+Fortunately, there is a better way. You code your transformation as:
+
+<xsl:transform version="2.0"
+ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+>
+   <xsl:import href="http://fxsl/sf/net/f/func-foldl.xsl"/>
+
+.
+.
+.
+
+</xsl:transform>
+
+and the XSLT 2.0 processor, in conjunction with the catalog processing software, and the
+file catalog.xml which comes as part of the FXSL distribution, will find func-foldl.xsl
+automatically for you. No editing involved.
+
+Well, these scenarios may or may not apply to you. But there are other tools that rely
+on the catalog, such as fxsli, the Gestalt FXSL interpreter. If you want to use this tool,
+then you MUST inform your system where to find the catalog.xml file.
+
+How to let your system know where to find catalog.xml
+=====================================================
+
+This depends somewhat on your XSLT 2.0 processor.
+
+I will explain what to do for Gexslt, Gestalt, and fxsli, and also for
+Java-based processors such as Saxon.
+
+But first, I must emphasize, that you must NOT move the catalog.xml from the postion where
+you unpacked it. It is important that it stays in the fxsl-xslt2 directory, so that relative paths
+work correctly.
+
+For Java-base processors, such as Saxon, you need to install the Apache commons catalog resolver.
+For instructions on doing this, and how to use it, see 
+http://xml.apache.org/commons/components/resolver/resolver-article.html.
+
+This includes specific instructions for Saxon.
+
+Gexslt, Gestalt and fxsli, use the same scheme as xsltproc. That means that when xsltproc supports
+XSLT 2.0, it too will work using these instructions.
+
+The most portable way is to set the environment variable XML_CATALOG_FILES to the full path
+to catalog.xml (actually, you can specify a list of catalogs here if you wish). 
+
+So on my linux system, I do:
+
+export XM_CATALOG_FILES=/home/colin/fxsl-xslt2/catalog.xml
+
+This also works on Windows (except you define environment variables through the control panel).
+
+
+On linux systems, you can also edit the file /etc/xml/catalog, if you know what you are doing, but
+this is not necessary.
+
+I don know how Altova's processor uses XML catalogs - ask their support.
