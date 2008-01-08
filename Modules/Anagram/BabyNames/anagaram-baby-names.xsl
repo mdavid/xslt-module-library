@@ -47,13 +47,13 @@
         </anagrams>
     </xsl:variable>
 
-    <xsl:variable name="vZeroes" select="'000000000000'" as="xs:string" />
+    <xsl:variable name="vZeroes" select="'0000000000'" as="xs:string" />
 
     <xsl:key name="kAngrmChain" match="aChain" use="@key" />
 
     <xsl:template match="/">
         <xsl:value-of select="concat('There are ', count($boyNames), ' boy names.&#xA;')" />
-        <xsl:value-of select="concat('There are ', count($girlNames), ' girls names.&#xA;')" />
+        <xsl:value-of select="concat('There are ', count($girlNames), ' girl names.&#xA;')" />
         <xsl:value-of
             select="concat('There are ', count($boyNames) + count($girlNames), ' total names resulting in ', count($anagrams//aChain), ' matching mixed sex combinations.&#xA;')" />
         <xsl:text>The name combinations are as follows,&#xA;</xsl:text>
