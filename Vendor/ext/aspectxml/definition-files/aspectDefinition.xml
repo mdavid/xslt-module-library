@@ -1,0 +1,62 @@
+<!--
+
+  Title:
+     Test aspectXML instance 1
+  
+  Description:
+     First test example instance to exercise the aspectXML schema.
+  
+  License:
+     Subject to the LGPL license, see www.aspectXML.org for details
+
+  Versions:
+     0.1: Russell Miles, 08/04/2004
+     0.2: Russell Miles, 09/04/2004
+     0.3: Russell Miles, 11/04/2004                       
+-->
+<aspects>
+	<aspect name="HelloWorld">
+		<!-- Note: RLM - extend from apply-templates in the XSL schema? -->
+		<!-- Note: RLM - pattern field specifies an XPATH location to be used 
+                 as a match in the AXLE. -->
+		<pointcut name="namedElementPointcut">
+			<unaryPointcutExpr operator="" pattern="Message"/>
+		</pointcut>
+		<pointcut name="namedAttributePointcut">
+			<unaryPointcutExpr operator="" pattern="Message/@format"/>
+		</pointcut>
+		<pointcut name="namedAttributePointcut">
+			<unaryPointcutExpr operator="" pattern="Message/@type"/>
+		</pointcut>
+		<!-- Declaring some element advice -->
+		<adviceDefinition>
+			<elementAdvice name="current" type="after">
+				<pointcut>
+					<namedPointcutExpr reference="namedElementPointcut"/>
+				</pointcut>
+				<adviceContents>
+					<!-- Note: RLM - Any content should be allowed in here - this is where the woven
+                 advice content will be stated. Possibly link using a URL to another
+                 source as well?-->
+					<!-- Note: RLM - at this point I have not included schema definitions for this woven content,
+                 nor the busoness logic for that matter. This is done for simplicity at this point
+                 and to avoid getting clouded by schemas up front - that can wait for later.
+                 Not sure how to incorporate a schema for the WovenTag element?-->
+					<WovenTag> Hello World </WovenTag>
+				</adviceContents>
+			</elementAdvice>
+		</adviceDefinition>
+		<!-- Declaring some attribute advice -->
+		<adviceDefinition>
+			<attributeAdvice name="current" type="around">
+				<pointcut>
+					<namedPointcutExpr reference="namedAttributePointcut"/>
+				</pointcut>
+				<attribute type="xs:string">
+					<name>wovenAttribute</name>
+					<value>Some Woven Value</value>
+				</attribute>
+			</attributeAdvice>
+		</adviceDefinition>
+	</aspect>
+</aspects>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<output>
+  <files>
+    <source href="test-group.xml"/>
+  </files>
+  <defaults>
+    <processor id="saxon.net" call="Transform">Saxon.NET 0.1.8.3 form x2x2x.org</processor>
+    <command-line id="cmdln" default-switch="-">
+      <switch call-id="saxon.net" no-switch="true"/>
+    </command-line>
+  </defaults>
+  <sequence>
+    <node call-id="cmdln" />
+    <node>t</node>
+    <node>o</node>
+    <node>in-xml</node>
+    <node>in-xsl</node>
+    <node>capture-t</node>
+  </sequence>
+  <sequence>
+    <node call-id="cmdln" />
+    <node>t</node>
+    <node>3</node>
+    <node>o</node>
+    <node>in-xml</node>
+    <node>in-xsl</node>
+    <node>capture-t</node>
+  </sequence>
+  <sequence>
+    <node call-id="cmdln" />
+    <node>t</node>
+    <node>9</node>
+    <node>o</node>
+    <node>in-xml</node>
+    <node>in-xsl</node>
+    <node>capture-t</node>
+  </sequence>
+</output>

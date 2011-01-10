@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Greeting>
+   <WovenTag> Hello World </WovenTag>
+   <Message wovenAttribute="Some Woven Value"/>
+   <WovenTag> Hello World </WovenTag>
+   <Message wovenAttribute="Some Woven Value"/>
+</Greeting>
